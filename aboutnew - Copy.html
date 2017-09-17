@@ -18,9 +18,11 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 .nav {border:0; overflow:hidden; height:;width:100%; background-color:green;}
 .nav>ul {list-style-type:none; margin:0; padding:0; overflow:hidden; width:350px;margin:auto;}
 .nav>ul>li {float:left;  display:block; border-left:1px solid grey;}
-.nav>ul>li>a {padding:10px 12px; display:block; background-color:brown; }
-.nav>ul>li>a:hover {transition:0.5s; margin:auto; width:1px;}
-.nav>ul>li>a:hover {background-color:orange; width:auto;}
+.nav>ul>li>a {padding:10px 12px; display:block; background-color:brown;position: relative;z-index:2;overflow:hidden;color:white;}
+.nav>ul>li>a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color: orange; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
+.nav>ul>li>a:hover::after {width:100%;left:0;}
+
+
 
 </style>
 </head>
