@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Al Najah International</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+
+<style>
+
+body {margin:0;font-family: "Lato", sans-serif;}
+
+.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
+
+/* menubar */
+.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
+.menu{height:22px;width:50px;}
+.linebar {border-radius: 2px;height:4px;width:50px;background-color:#ee6e12;}
+.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(3) {transition: .5s;}
+.menuon{height:30px;width:40px;}
+.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
+.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
+.menuon>.linebar:nth-child(2) {opacity: 0;}
+.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
+
+/* navigation */
+.nav {list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;}
+.nav li{position:relative;display:inline;}
+.nav a {display:inline-block;padding:10px;color:white;text-decoration: none;}
+.nav ul {position:absolute;left:-9999px;margin:0;padding:0;text-align:left;background-color:#626262;}
+.nav ul li{display:block;}
+.nav li:hover ul{left:0;z-index:1;}
+.nav li:hover a{background-color:#ee6e12; transition:.5s;}
+.nav li:hover ul a{background-color:#ee6e12; }
+.nav li:hover ul a:hover{background-color:red;}
+.nav ul a{white-space:nowrap;display:block;border-bottom:1px solid;text-decoration:none;}
+@media screen and (max-width:768px){
+.nav li{display:list-item;width:100%;}
+.nav a {width:100%; padding-left:0;padding-right:0;text-align:left;}
+.nav{ background-color:#ee6e12;}
+.nav li:hover a {background-color: red;}
+.nav li:hover ul{width:80%;}
+.dropblock{display:block;}
+.dropnone{display:none;}
+}
+.nav .active {background-color:#ee6e12;}
+
+/* for full page image view */
+body, html {height: 100%;padding: 0; margin: 0;}
+@media screen and (min-height: 500px){div#div100 {    height:calc(100vh - 140px);padding: 0; margin: 0;}}
+@media screen and (max-height: 500px){div#div100 {    height:360px;padding: 0; margin: 0;}}
+
+/* left n & right banner */
+@media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;height:calc(100vh - 140px);}}
+@media screen and (min-width: 992px) {.bannerright {width:48%; float:right;height:calc(100vh - 140px);}}
+.bannercontainer {	}
+
+.bg1 { background-image: url(img/5.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg2 {background-image: url(img/11.jpg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg3 {background-image: url(img/12.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg4 {background-image: url(img/11.jpg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg5 {background-image: url(img/15.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+
+@media screen and (min-height: 500px)
+{
+.ratio{position:relative;width:100%;height:calc(100vh - 140px);background-repeat:no-repeat;background-position:center center;background-size: cover;}
+.ratio2{position:relative;width:100%;height:calc(50vh - 70px);background-repeat:no-repeat;background-position:center center;background-size:cover;}
+}
+@media screen and (max-height: 500px)
+{
+.ratio{position:relative;width:100%;height:360px;background-repeat:no-repeat;background-position:center center;background-size: cover;}
+.ratio2{position:relative;width:100%;height:180px;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+}
+@media screen and (max-width: 768px){.ratio{height:calc(50vh - 71px);}}
+
+footer { background-color: #555; color: white; padding: 5px;   }
+
+.bannerlabel{width:100%; height:50px; background-color:rgba(255, 0, 0, 0.6); position:absolute; bottom:0;
+padding-top: 12px ; text-align:center; color:white; font-size:20px;}
+.bannerclick{height:100%;width:100%;}
+.bannerclick:hover{ background-color:rgba(255, 0, 0, 0.6);}
+
+/* Fading animation */
+.fades {
+	background-color:black;
+  -webkit-animation-name: fades;
+  -webkit-animation-duration: 4s;
+  animation-name: fades;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fades {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fades {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+.bottomfooter {background-color:#626262;width:100%;text-align:center;color:#e0e0e0;position: static;}
+
+</style>
+</head>
+<body>
+ 
+<header>
+<img src="img/newlogo.png" height="80">
+<img src="img/newname.png" height="80">
+<div class="contactheader xs-hidden">
+<span>Contact Us</span><br>
+<span class="contactnumber">+91 9035 442 545</span>
+</div>
+
+<div class="menuholder xs-visible">
+<div class="menu" id="toggle" onclick="button()">
+<div class="linebar"></div>
+<div class="linebar"></div>
+<div class="linebar"></div>
+</div>
+</div>
+</header>
+
+
+<div id="dropmenu">
+<ul class="nav">
+<li><a class="active" href="#">Home</a></li>
+<li><a href="about-us.html">About-us</a></li>
+
+<li>
+<a href="#">Events</a>
+<ul>
+<li><a href="hr.html">National Human <br>Resources <br>Conference - 2017</a></li>
+<li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
+<li><a href="events.html">UPCOMING EVENTS</a></li>
+</ul>
+</li>
+
+<!-- <li><a href="#" style="color:grey;">Gallery</a></li> -->
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="bannercontainer">
+
+<div class="bannerleft">
+		
+
+<div class="mySlides fades">
+  
+  <div id="div100" ><div class="bg1"></div></div>
+  
+</div>
+
+<div class="mySlides fades">
+  
+  <div id="div100" ><div class="bg2"></div></div>
+  
+</div>
+
+<div class="mySlides fades">
+  
+  <div id="div100" ><div class="bg3"></div></div>
+  
+</div>
+
+<div style="text-align:center;margin-top:-25px;border:">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</div>
+
+
+<div class="bannerright">
+<div id="div100" >
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
+
+<div class="col-sm-4" style="padding:0px;">
+<div class="ratio" style="background-image:url('img/9.jpg')">
+	<a class="bannerhover" href="about-us.html"><div class="bannerclick"><div class="bannerlabel">About-us</div></div></a>
+</div>
+</div>
+
+<div class="col-sm-4" style="padding:0px;">
+<div class="ratio" style="background-image:url('img/d2.jpg')">
+	<a class="bannerhover" href="events.html"><div class="bannerclick"><div class="bannerlabel">Events</div></div></a>
+</div>
+</div>
+
+<div class="col-sm-4" style="padding:0px;">
+<div class="ratio2" style="background-image:url('img/8.jpg')">
+	<a class="bannerhover" href="#"><div class="bannerclick"><div class="bannerlabel">Gallery</div></div></a>
+</div>
+<div class="ratio2" style="background-image:url('img/slide3-2.jpg')">
+	<a class="bannerhover" href="contact.html"><div class="bannerclick"><div class="bannerlabel">Contact</div></div></a>
+		<div class="bottomfooter xs-visible">
+		<a>© Copyright</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a>Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a style="color:#b3afaf;">Web Design by msb</a>
+		</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bottomfooter xs-hidden">
+
+<a>© Copyright</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a>Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a style="color:#b3afaf;">Web Design by msb</a>
+
+</div>
+  
+
+
+
+<script>
+var t = 1;
+document.getElementById('dropmenu').className = "dropnone";
+function button() {
+if (t == 1) {
+// add stuff here
+document.getElementById('dropmenu').className = "dropblock";
+document.getElementById('toggle').className = 'menuon';
+// end stuff here
+
+t = 2;
+}
+else {
+// add stuff here
+document.getElementById('dropmenu').className = "dropnone";
+document.getElementById('toggle').className = 'menu';
+// end stuff here
+
+t = 1;
+}
+
+
+}
+
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+
+	</script>
+</body>
+</html>
