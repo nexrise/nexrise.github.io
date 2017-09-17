@@ -13,7 +13,14 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 .clicks1 {width:100px;height:200px;background-color:blue;}
 .clicks2 {width:100px;height:200px;background-color:red;}
 
+.border {border:0.1px solid blue;}
 
+.nav {border:0; overflow:hidden; height:;width:100%; background-color:green;}
+.nav>ul {list-style-type:none; margin:0; padding:0; overflow:hidden; width:350px;margin:auto;}
+.nav>ul>li {float:left;  display:block; border-left:1px solid grey;}
+.nav>ul>li>a {padding:10px 12px; display:block; background-color:brown; }
+.nav>ul>li>a:hover {transition:0.5s; margin:auto; width:1px;}
+.nav>ul>li>a:hover {background-color:orange; width:auto;}
 
 </style>
 </head>
@@ -22,35 +29,30 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 
 <header>
 
+<div class="nav">
+<ul class="border">
 
-<div class="menuholder xs-visible">
-<div class="menu" id="toggle" onclick="button()">
-<div class="linebar"></div>
-<div class="linebar"></div>
-<div class="linebar"></div>
-</div>
-</div>
-</header>
+<li><a>Home</a></li>
+<li><a>About-us</a></li>
+<li><a>Events</a></li>
+<li><a>Contact</a></li>
 
-
-<div id="dropmenu">
-<ul class="nav">
-<li><a href="index.html">Home</a></li>
-<li><a class="active" href="#">About-us</a></li>
-
-<li>
-<a href="#">Events</a>
-<ul>
-<li><a href="hr.html">National Human <br>Resources <br>Conference - 2017</a></li>
-<li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
-<li><a href="events.html">UPCOMING EVENTS</a></li>
-</ul>
-</li>
-
-<!-- <li><a href="#" style="color:grey;">Gallery</a></li> -->
-<li><a href="contact.html">Contact</a></li>
 </ul>
 </div>
+
+
+
+Home
+About-us
+Events
+National Human <br>Resources <br>Conference - 2017
+Power Summit - <br>Sultanate of Oman
+UPCOMING EVENTS
+Contact
+
+
+
+
 <button class="clicker">clicker</button>
 <div class="clicks1"></div>
 
