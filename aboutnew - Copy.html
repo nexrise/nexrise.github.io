@@ -15,11 +15,11 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 
 .border {border:0.1px solid blue;}
 
-.nav {border:0; overflow:hidden; height:;width:100%; background-color:green;}
+.nav {border:0; overflow:hidden; height:;width:100%; background-color:#626262;}
 .nav>ul {list-style-type:none; margin:0; padding:0; overflow:hidden; width:350px;margin:auto;}
-.nav>ul>li {float:left;  display:block; border-left:1px solid grey;}
-.nav a {padding:10px 12px; display:block; background-color:brown;position: relative;z-index:2;overflow:hidden;color:white;text-decoration:none;}
-.nav a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color: orange; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
+.nav>ul>li {float:left;  display:block; }
+.nav a {padding:10px 12px; display:block; background-color:#626262;position: relative;z-index:2;overflow:hidden;color:white;text-decoration:none;}
+.nav a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color:#ee6e12; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
 .nav a:hover::after {width:100%;left:0;}
 
 .dropdown {float:left;}
@@ -30,12 +30,29 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 .nav>ul>li {float:none;}
 .dropdown-content {top:82px;}
 }
-
+#toggle {border:1px solid blue; color:orange; width:20px; border-radius:5px;}
 .a {display:none;}
 .b {display:block;}
 
+/* menubar */
+.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
+.menu{height:22px;width:50px;}
+.linebar {border-radius: 2px;height:4px;width:50px;background-color:#ee6e12;}
+.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(3) {transition: .5s;}
+.menuon{height:30px;width:40px;}
+.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
+.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
+.menuon>.linebar:nth-child(2) {opacity: 0;}
+.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
+/* menubar */
 
-
+@media only screen and (max-width:768px) {
+.nav {}
+.hide {display:none;}
+.show {display:block;}
+}
 
 </style>
 </head>
@@ -43,14 +60,20 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 <body>
 
 <header>
-
-<div class="nav">
-<ul class="border">
+<div class="menuholder xs-visible">
+<div class="menu" id="menubars" onclick="button()">
+<div class="linebar"></div>
+<div class="linebar"></div>
+<div class="linebar"></div>
+</div>
+</div>
+<div id="menutoggle" class="nav hide">
+<ul>
 
 <li><a href="#">Home</a></li>
 <li><a href="#">About-us</a></li>
 <li class="dropdown">
-	<a href="#">Events<button id="toggle" class="xs-visible" style="float:right;">></button></a>
+	<a href="#">Events<div id="toggle" class="xs-visible" style="float:right;">V</div></a>
 	<div id="togglee" class="a dropdown-content">
 		<a href="#">National Human <br>Resources <br>Conference - 2017</a>
 		<a href="#">Power Summit - <br>Sultanate of Oman</a>
@@ -65,30 +88,24 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 
 
 
-Home
-About-us
-Events
-National Human <br>Resources <br>Conference - 2017
-Power Summit - <br>Sultanate of Oman
-UPCOMING EVENTS
-Contact
-
-
-
-
-<button class="clicker">clicker</button>
-<div class="clicks1"></div>
-
 
 <script>
 $(document).ready(function(){
-	$(".clicker").click(function(){
-		$(".clicks1").hide();
-	});
-	
+
 	$("#toggle").click(function(){
 		$("#togglee	").toggleClass("a b");
 	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menutoggle").toggleClass("hide show");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menutoggle").toggleClass("menuon menu");
+	});
+	
 
 });
 </script>
