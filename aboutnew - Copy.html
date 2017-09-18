@@ -4,7 +4,7 @@
   <title>Al Najah Events</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="https://mdmsb.github.io/purecss.css">
 <script src="jquery-3.2.1.slim.min.js"></script>
 <style>
 body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
@@ -18,11 +18,18 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 .nav {border:0; overflow:hidden; height:;width:100%; background-color:green;}
 .nav>ul {list-style-type:none; margin:0; padding:0; overflow:hidden; width:350px;margin:auto;}
 .nav>ul>li {float:left;  display:block; border-left:1px solid grey;}
-.nav>ul>li>a {padding:10px 12px; display:block; background-color:brown;position: relative;z-index:2;overflow:hidden;color:white;}
-.nav>ul>li>a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color: orange; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
-.nav>ul>li>a:hover::after {width:100%;left:0;}
+.nav a {padding:10px 12px; display:block; background-color:brown;position: relative;z-index:2;overflow:hidden;color:white;text-decoration:none;}
+.nav a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color: orange; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
+.nav a:hover::after {width:100%;left:0;}
 
+.dropdown {float:left;}
+.dropdown-content {display:none;position:relative;min-width:150px;top:0px;}
+/* .dropdown:hover .dropdown-content {display:block;} */
 
+@media only screen and (max-width:768px) {
+.nav>ul>li {float:none;}
+
+}
 
 </style>
 </head>
@@ -34,10 +41,18 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 <div class="nav">
 <ul class="border">
 
-<li><a>Home</a></li>
-<li><a>About-us</a></li>
-<li><a>Events</a></li>
-<li><a>Contact</a></li>
+<li><a href="">Home</a></li>
+<li><a href="">About-us</a></li>
+<li class="dropdown">
+	<a href="">Events<button id="toggle" class="xs-visible" style="float:right;">></button></a>
+	<div class="dropdown-content">
+		<a href="">link</a>
+		<a href="">link</a>
+		<a href="">link</a>
+		<a href="">link</a>
+	</div>
+</li>
+<li><a href="">Contact</a></li>
 
 </ul>
 </div>
@@ -63,6 +78,10 @@ Contact
 $(document).ready(function(){
 	$(".clicker").click(function(){
 		$(".clicks1").hide();
+	});
+	
+	$("#toggle").click(function(){
+		$("").toggleClass("");
 	});
 
 });
