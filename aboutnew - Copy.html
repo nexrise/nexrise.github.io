@@ -23,13 +23,19 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 .nav a:hover::after {width:100%;left:0;}
 
 .dropdown {float:left;}
-.dropdown-content {display:none;position:relative;min-width:150px;top:0px;}
-/* .dropdown:hover .dropdown-content {display:block;} */
+.dropdown-content {display:none;position:absolute;min-width:150px;top:41.5px;z-index:3;}
+@media only screen and (min-width:768px) {.dropdown:hover .dropdown-content {display:block;} }
 
 @media only screen and (max-width:768px) {
 .nav>ul>li {float:none;}
-
+.dropdown-content {top:82px;}
 }
+
+.a {display:none;}
+.b {display:block;}
+
+
+
 
 </style>
 </head>
@@ -41,15 +47,15 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 <div class="nav">
 <ul class="border">
 
-<li><a href="">Home</a></li>
-<li><a href="">About-us</a></li>
+<li><a href="#">Home</a></li>
+<li><a href="#">About-us</a></li>
 <li class="dropdown">
-	<a href="">Events<button id="toggle" class="xs-visible" style="float:right;">></button></a>
-	<div class="dropdown-content">
-		<a href="">link</a>
-		<a href="">link</a>
-		<a href="">link</a>
-		<a href="">link</a>
+	<a href="#">Events<button id="toggle" class="xs-visible" style="float:right;">></button></a>
+	<div id="togglee" class="a dropdown-content">
+		<a href="#">National Human <br>Resources <br>Conference - 2017</a>
+		<a href="#">Power Summit - <br>Sultanate of Oman</a>
+		<a href="#">UPCOMING EVENTS</a>
+		<a href="#"></a>
 	</div>
 </li>
 <li><a href="">Contact</a></li>
@@ -81,7 +87,7 @@ $(document).ready(function(){
 	});
 	
 	$("#toggle").click(function(){
-		$("").toggleClass("");
+		$("#togglee	").toggleClass("a b");
 	});
 
 });
