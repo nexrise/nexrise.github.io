@@ -9,9 +9,9 @@
 <style>
 
 body {margin:0;font-family: "Lato", sans-serif;}
-
-.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
-.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
+header {height :84px; overflow:hidden;}
+.contactheader{ float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{ color: #ee6e12; font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
 /* menubar */
 .menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
@@ -41,9 +41,11 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .nav>ul>li {float:none;}
 .dropdown-content {top:82px;}
 }
-#toggle {border:1px solid blue; color:orange; width:30px; border-radius:5px;margin-top:13px; background-color:red;}
+#toggle {width:50px; height:30px; margin-top:3px; overflow:hidden; border:1px solid;}
 .a {display:none;}
 .b {display:block;}
+.arrowimg1 {margin-top:-74px;margin-left:5px;}
+.arrowimg2 {margin-top:4px;margin-left:5px;}
 @media only screen and (max-width:768px) {
 .nav, .nav a {background-color:rgb(244, 121, 32);}
 .nav .active {background-color:rgb(238, 110, 18);}
@@ -52,7 +54,6 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .dropdown-content {top:199px;}
 .nav>ul {width:300px;}
 }
-
 
 /* navigation */
 
@@ -131,8 +132,8 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 <body>
  
 <header>
-<img src="img/newlogo.png" height="80">
-<img src="img/newname.png" height="80">
+<img src="img/logoeng.png" height="80">
+<img class="xs-hidden" src="img/logoarb.png" height="80" style="float:right;">
 <div class="contactheader xs-hidden">
 <span>Contact Us</span><br>
 <span class="contactnumber">+91 9035 442 545</span>
@@ -154,7 +155,9 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 <li><a class="active" href="home.html">Home</a></li>
 <li><a href="about-us.html">About-us</a></li>
 <li class="dropdown">
-	<div id="toggle" class="xs-visible" style="float:right;">&nbsp;&nbsp;V</div><a href="events.html">Events</a>
+		<div id="toggle" class="xs-visible" style="float:right;">
+			<img id="arrowtoggle" class="arrowimg1" src="img/arrow.png">
+		</div><a href="events.html">Events</a>
 	<div id="togglee" class="a dropdown-content">
 		<a href="hr.html">National Human <br>Resources <br>Conference - 2017</a>
 		<a href="#">Power Summit - <br>Sultanate of Oman</a>
@@ -249,7 +252,11 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 $(document).ready(function(){
 
 	$("#toggle").click(function(){
-		$("#togglee	").toggleClass("a b");
+		$("#togglee").toggleClass("a b");
+	});
+	
+	$("#toggle").click(function(){
+		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
 	});
 	
 	$("#menubars").click(function(){
