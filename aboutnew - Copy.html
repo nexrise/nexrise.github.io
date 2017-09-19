@@ -61,7 +61,7 @@ body {margin:0;display:block; font: 300 normal 15px/1.4 Raleway,sans-serif;lette
 
 <header>
 <div class="menuholder xs-visible">
-<div class="menu" id="menubars" onclick="button()">
+<div class="menu" id="menubars">
 <div class="linebar"></div>
 <div class="linebar"></div>
 <div class="linebar"></div>
@@ -103,7 +103,7 @@ $(document).ready(function(){
 	
 	$("#menubars").click(function(){
 		
-		$("#menutoggle").toggleClass("menuon menu");
+		$("#menubars").toggleClass("menu menuon");
 	});
 	
 
