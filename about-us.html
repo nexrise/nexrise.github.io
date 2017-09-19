@@ -1,338 +1,257 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <html lang="en">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
-
 <head>
+  <title>Al Najah Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+<script src="jquery-3.2.1.slim.min.js"></script>
 
-<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0">
-<meta name="robots" content="index, follow">
-<meta name="baseurl" content="index.html" />
-<meta name="logourl" content="img/logo.png" />
-<meta name="curLang" content="en" />
-<meta name="device" content="false" />
+<style>
+body {margin:0;display:block;}
+header {height :84px; overflow:hidden;}
+.contactheader{ float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{ color: #ee6e12; font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
-<link rel="apple-touch-icon" href="apple-touch-icon.html">
-	<meta name="description" content="NexRise Events - Management of events in UAE, Dubai, sharjah, Abu Dhabi" />
-	<meta name="keywords" content="NexRise Events, events, event, management, dubai, sharjah, baharain, india" />
-	<meta name="author" content="msb" />
+/* menubar */
+.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
+.menu{height:22px;width:50px;}
+.linebar {border-radius: 2px;height:4px;width:40px;background-color:#ee6e12;}
+.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(3) {transition: .5s;}
+.menuon{height:30px;width:40px;}
+.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
+.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
+.menuon>.linebar:nth-child(2) {opacity: 0;}
+.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
 
-<title>NexRise Events | ABOUT</title
-<link rel="shortcut icon" href="img/fav-icon.png"> 
-<link rel="icon" href="img/fav-icon.png"> 
+/* navigation */
+.nav {border:0; overflow:hidden; height:;width:100%; background-color:#626262;}
+.nav>ul {list-style-type:none; margin:0; padding:0; overflow:hidden; width:350px;margin:auto;}
+.nav>ul>li {float:left;  display:block; }
+.nav a {padding:10px 12px; display:block; background-color:#626262;position: relative;z-index:2;overflow:hidden;color:white;text-decoration:none;}
+.nav a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color:#ee6e12; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
+.nav a:hover::after {width:100%;left:0;}
+.nav .active {background-color:rgb(238, 110, 18);}
+.dropdown {float:left;}
+.dropdown-content {display:none;position:absolute;min-width:150px;top:122px;z-index:3;}
+@media only screen and (min-width:768px) {.dropdown:hover .dropdown-content {display:block;} }
+@media only screen and (max-width:768px) {
+.nav>ul>li {float:none;}
+.dropdown-content {top:82px;}
+}
+#toggle {width:50px; height:30px; margin-top:3px; overflow:hidden;}
+.a {display:none;}
+.b {display:block;}
+.arrowimg1 {margin-top:-74px;margin-left:5px;}
+.arrowimg2 {margin-top:4px;margin-left:5px;}
+@media only screen and (max-width:768px) {
+.nav, .nav a {background-color:rgb(244, 121, 32);}
+.nav .active {background-color:rgb(238, 110, 18);}
+.hide {display:none;}
+.show {display:block;}
+.dropdown-content {top:199px;}
+.nav>ul {width:300px;}
+}
+
+/* navigation */
+
+/* CONTENT */
+
+body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
+
+.firstblock {background-color:#ee6e12;border:0;margin-top:10px;color:white;}
+.center {height:439px; width:100%; background-position:center center;background-repeat:no-repeat;margin:auto;background-size: cover; }
+.secondblock {background-color:#626262;color:white;border:0;margin-top:10px;margin-bottom:10px;}
+
+.col-sm-6 {padding:0;}
+.col-sm-6>p,h2 {padding:10px 40px;text-align: justify;font-weight: 500;letter-spacing: .05em;}
+
+/* social */
+.sm {height:55px; width:55px;}
+.sm:hover {width:60px;margin-left:-3px;}
+
+.section_button {width:300px; border:; overflow:hidden; margin:auto;height:25px;}
+.button {background-color:purple; height:23px; width:23%; color:white;border-radius:30px; margin:0px 1px; text-align:center; float:left; text-decoration:none; padding:1px;}
+.button:hover {background-color:#663399;}
 
 
 
-<link media="all" type="text/css" rel="stylesheet" href="main.min.css">
-		
-<link media="all" type="text/css" rel="stylesheet" href="developer.css">
+/* FOOTER */
+.bottomfooter {background-color:#626262;width:100%;text-align:center;color:#e0e0e0;height:80px; display:block; overflow:hidden;}
+.bottomfooter li{display:inline;}
+.bottomfooter ul{padding:25px 0 20px 0;}
 
-<link media="all" type="text/css" rel="stylesheet" href="jquery-ui.css">
-
-
-
-
-
-
-
-
-
-
-
+</style>
 </head>
-<body class="en "> 
- <!--[if lt IE 8]>
-	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-	<!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- FLOATING -->
-        <!-- social media -->
-        
-		
-		<div id="floatMenu" class="socialMediaWrap">
-            <ul class="socialButtonWrap">
-			
-                <li class="fb">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        
-                        <span>Facebook</span>
-                        <img src="img/facebook.png">
-                    </a>
-                </li>
-                <li class="twt">
-                    <a href="https://twitter.com/" target="_blank">
-                        
-                        <span>Twitter </span>
-                        <img src="img/twitter.png">
-                    </a>
-                </li>
-                <li class="insta">
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="img/instagram.png">  
-                        <span>Instagram </span>  
-                        
-                    </a>
-                </li> 
-                <li class="linkedin">
-                    <a href="https://www.linkedin.com/company/" target="_blank">
-                        <span>linkedin </span>
-                        <img src="img/linkedin.png">
-                    </a>
-                </li> 
-            </ul> 
-        </div> 
+<body>
 
-        <!-- social media --> 
-        <!-- FLOATING -->
-
-        <header id="header">
-            <div class="logoContainer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-7 logoLeftWrap">
-                            <div class="navbar-header">
-                                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a href="index.html" class="navbar-brand">
-                                    <img src="img/newlogo.png" height="80">
-                                </a>
-								<a href="index.html" class="navbar-brand">
-                                    <img src="img/newname.png" height="80">
-                                </a>
-                            </div>    
-                        </div>
-                       
-					   
-					    <div class="col-sm-5 logoRightWrap">
-                            <ul class="rightLogoWrap">
-                                <li class="searchAndContact">
-                            				
-						
-						            <div class="contactNoWrap">
-                                        <span class="tf">Contact Us</span>
-                                        <span class="glazeNo">+91 9035 442 545</span>
-                                    </div>  
-                                </li>
-                                
-                            </ul>   
-                        </div>
-                    </div>
-                    			
-					
-                </div>
-
- </div>
-
-           <nav class="navbar navbar-custom mainNavBar" role="navigation">
-            <!-- Demo navbar -->
-            <div class="yamm">
-              <div class="container">
-                <div id="navbar-collapse-1" class="navbar-collapse collapse">
-				
-<ul  role="menubar"  class=" nav navbar-nav mainNav ">
-
-<li>
-<a href="index.html">Home</a>
-</li>
-<li class=" active-main-menu ">
-<a  aria-title="Main Navigation Profile"  data-slug="profile" href="about-us.html" class=" " >About us</a> 
-</li>
-
-
-
-
-
-
-
-
-
-
- <li class="dropdown smallMenu has-submenu ">
- <span class="arrow-submenu"></span>
- <a  href="events.html" class=" dropdown-toggle disabled "data-toggle="dropdown" >
- Events</a>
- <ul role="menu" class=" dropdown-menu dp-normal " >
-<li>
-<a href="hr.html" >National Human <br>Resources <br>Conference - 2017</a> 
-</li> 
-<li>
-<a href="#" >Power Summit - <br>Sultanate of Oman</a> 
-</li> 
-<li>
-<a href="#" ><b>UPCOMING EVENTS</b></a> 
-</li>
-<li>
-<a href="#" ></a> 
-</li> 
-<li>
-<a href="#" ></a> 
-</li> 
-<li>
-<a href="#" ></a> 
-</li> 
- 
-</ul> 
-</li>
-
-
-<li>
-<a  aria-title="Main Navigation Contact Us"  data-slug="contact-us" href="contact.html" class=" " >Contact</a> 
-</li> 
-	
-	
-</ul>                
+<header>
+<img src="img/logoeng.png" height="80">
+<img class="xs-hidden" src="img/logoarb.png" height="80" style="float:right;">
+<div class="contactheader xs-hidden">
+<span>Contact Us</span><br>
+<span class="contactnumber">+91 9035 442 545</span>
 </div>
-              </div>
-            </div>
-		    
 
-                
-            <!-- container -->
-        </nav>
-     </header>	
+<div class="menuholder xs-visible">
+<div class="menu" id="menubars">
+<div class="linebar"></div>
+<div class="linebar"></div>
+<div class="linebar"></div>
+</div>
+</div>
+</header>
 
-        </nav>   
-     </header>	
-				<main class="contentSection">
-	<section class="contentHeader">
-		
-<br><br>
 
-		<div class="productSpecificationBlocksWrap orangeBg">
-			
-				<div class="containerFluid equalHeightWrap">
-										
-					<div class="col-sm-6 prImgBlock heightWrap">
-						<div class="prImg" style="background:url('img/9.jpg') center center no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+<div id="menutoggle" class="nav hide">
+<ul>
 
-							<img src="img/9.jpg"> 
-						</div>
-					</div>
-					
-					<div class="col-sm-6 prContentBlock heightWrap">
-						<h2>About us</h2>	
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="about-us.html">About-us</a></li>
+<li class="dropdown">
+		<div id="toggle" class="xs-visible" style="float:right;">
+			<img id="arrowtoggle" class="arrowimg1" src="img/arrow.png">
+		</div><a href="events.html">Events</a>
+	<div id="togglee" class="a dropdown-content">
+		<a href="hr.html">National Human <br>Resources <br>Conference - 2017</a>
+		<a href="#">Power Summit - <br>Sultanate of Oman</a>
+		<a href="#">UPCOMING EVENTS</a>
+		<a href="#"></a>
+	</div>
+</li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+
+<div class="container firstblock">
+
+<div class="col-sm-6">
+<div class="center" style="background-image: url('img/9.jpg');">
+</div>
+</div>
+
+
+<div class="col-sm-6">
+<h2>ABOUT US</h2>	
 <p>
-NexRise Events is a global service provider
+Al-Najah Events is a global service provider
 with one of the best business intelligence solutions today around the world with competitive Business to Business platforms,
 Focusing towards Business Events, Business Conferences, Business Trainings and Exhibitions.
 </p>
 <p>
-NexRise has quickly evolved to be one of the best premier in event-planning and designing company's based out of GCC.
-Our people is our strongest assets. The team at NexRise is trained and motivated to think out of the box and to be creative in providing solutions 
+Al-Najah has quickly evolved to be one of the best premier in event-planning and designing company's based out of GCC.
+Our people is our strongest assets. The team at Al-Najah is trained and motivated to think out of the box and to be creative in providing solutions 
 </p>
-					</div>
-									</div>
-				
-			
-		</div>
+</div>
 
-		<div class="productSpecificationBlocksWrap greyBg">
-			<div class="containerFluid equalHeightWrap">
-				
-											
-						<div class="col-sm-6 prImgBlock heightWrap">
-							<div class="prImg" style="background:url('img/d3.jpg') center center no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
-								<img src="img/d3.jpg">	
-							</div>
-						</div>
-						<div class="col-sm-6 prContentBlock heightWrap">
-							<h2>Our Vision</h2>
+</div>
+
+
+
+<div class="container secondblock">
+
+
+<div class="col-sm-6">
+<h2>OUR VISION</h2>
 <p>
-NexRise was started to do something more. Our true professional, 360 degree approach,
+Al-Najah was started to do something more. Our true professional, 360 degree approach,
 clear brand vision and experience of working with clients across the industry segments have made us passionate about delivering
 beyond the expectations. We like to nurture your brand, understand what you have in mind and translate it into a well-planned,
 innovative and well-organized event. 
 </p>
 <p>
-At NexRise, our success is built upon listening, respecting, understanding and complimenting some of the most successful individuals,
-companies and brands around the world. NexRise is well recognized expert in the field of special event-planning,
+At Al-Najah, our success is built upon listening, respecting, understanding and complimenting some of the most successful individuals,
+companies and brands around the world. Al-Najah is well recognized expert in the field of special event-planning,
 training programs, conferences, exhibitions and concert management.
 </p>
 <p>
 We strive to provide true value to our global clientele by promoting their products, services and
 ideologies through our uniquely conceptualized events and marketing solutions.
 </p>
-						</div>				
-			</div>
-		</div>
-	</section>
-</main>
+</div>
+
+
+<div class="col-sm-6">
+<div class="center" style="background-image: url('img/d3.jpg');">
+</div>
+</div>
+
+
+</div>
+
+<div class="container" style="border:0; height:; padding-top:10px; background-color:grey; overflow:hidden;">
+
+<div class="col-sm-3 xs-hidden">
+	<img src="img/f.jpg" class="sm">
+	<img src="img/t.jpg" class="sm">
+	<img src="img/g.jpg" class="sm">
+	<img src="img/i.jpg" class="sm">
+</div>
+<div class="col-sm-6" style=""><br>
+	<div class="section_button">
+		<a class="button" href="home.html" >home</a>
+		<a class="button" href="about-us.html" >about</a>
+		<a class="button" href="events.html" >events</a>
+		<a class="button" href="contact.html" >contact</a>
+	</div><br>
+		<div style="text-align:center;"><img src="img/logoeng.png" style="height:120px; width:100%; max-width:360px;"></div>
+		<div style="text-align:center;"><img src="img/logoarb.png" style="height:120px; width:240px;"></div>
+</div>
+<div class="col-sm-3" style="color:white;">
+	No.1,3rd Cross, AMC Road Bangalore 560045, Mobile:+91-9035442545<br>Email:info@alnajah-events.com
+</div>
+	<div class="col-sm-3 xs-visible">
+	<img src="img/f.jpg" class="sm">
+	<img src="img/t.jpg" class="sm">
+	<img src="img/g.jpg" class="sm">
+	<img src="img/i.jpg" class="sm">
+	</div>
+
+</div>
 
 
 
+<div class="bottomfooter">
 
-<table style="border:4px solid black;width:100%;height:150px;color:black;background:white">
-  <tr>
-    <td style="width:33.31%"></td>
-    <td style="width:33.31% height:150px;" >
-	
-	<div style="text-align:center;">
-	<b><a href="index.html">home</a>&nbsp;|&nbsp;
-	<a href="about-us.html">about-us</a>&nbsp;|&nbsp;
-	<a href="events.html">events</a>&nbsp;|&nbsp;
-	<a href="contact.html">contact</a>&nbsp;
-	</b></div>
-	<img src="img/newlogo2.png"style="height:100px; width:70%;image-align:center;"></td> 
-    
-	<td style="width:33.31%;"><center>No.1,3rd Cross,<br>AMC Road <br> Bangalore 560045<br> Contact:<br>Mobile:+91 9035442545 <br>Email:info@nexrise-events.com<center></td>
-  </tr>
- 
-  </table>
+<ul>
+<li>© Copyright&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+<li>Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+<li><a style="color:#b3afaf;">Web Design by msb</a></li>
+</ul>
 
-<footer>
-<a href="#" id="toTop" style="display:none"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-    
-<div class="copyRight">
-        <div class="container">
-            <ul class="copy">
-                <li><a>© Copyright</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li class="webDesignBy">Web Design by <a target="_blank" href="http://www.google.com/">msb</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>			
-	
-		<!-- LOGIN POP UP -->
-<script src="../assets/frontend/dist/scripts/bundle.min.js"></script>
-<script src="../assets/frontend/dist/scripts/app.min.js"></script>
-<script src="../assets/frontend/dist/scripts/jquery.validate.min.js"></script>
-<script src="../assets/frontend/dist/scripts/jquery-ui.js"></script>
+</div>
+  
 
 
- 
-	
+
 <script>
-  $(document).ready(function() {
-              var slider = glaze.glazeSingleSubSlider('.glazeSlider' , 800, 3000); 
-              var slider1 = glaze.glazeSingleSubSlider('.glazeSingleSubSlider' , 800, 500);  
-            });
-</script>
+$(document).ready(function(){
+
+	$("#toggle").click(function(){
+		$("#togglee").toggleClass("a b");
+	});
 	
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+	$("#toggle").click(function(){
+		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menutoggle").toggleClass("hide show");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menubars").toggleClass("menu menuon");
+	});
+	
 
-  ga('create', 'UA-90804013-1', 'auto');
-  ga('send', 'pageview');
+});
 
-</script>	
+	</script>
 </body>
-
 </html>
