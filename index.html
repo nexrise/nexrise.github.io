@@ -33,6 +33,7 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .nav a {padding:10px 12px; display:block; background-color:#626262;position: relative;z-index:2;overflow:hidden;color:white;text-decoration:none;}
 .nav a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color:#ee6e12; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
 .nav a:hover::after {width:100%;left:0;}
+.nav .active {background-color:rgb(238, 110, 18);}
 .dropdown {float:left;}
 .dropdown-content {display:none;position:absolute;min-width:150px;top:122px;z-index:3;}
 @media only screen and (min-width:768px) {.dropdown:hover .dropdown-content {display:block;} }
@@ -40,15 +41,19 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .nav>ul>li {float:none;}
 .dropdown-content {top:82px;}
 }
-#toggle {border:1px solid blue; color:orange; width:20px; border-radius:5px;}
+#toggle {border:1px solid blue; color:orange; width:20px; border-radius:5px;margin-top:15px;z-index:5; background-color:red;}
 .a {display:none;}
 .b {display:block;}
 @media only screen and (max-width:768px) {
-.nav {}
+.nav, .nav a {background-color:rgb(244, 121, 32);}
+.nav .active {background-color:rgb(238, 110, 18);}
 .hide {display:none;}
 .show {display:block;}
 .dropdown-content {top:199px;}
+.nav>ul {width:250px;}
 }
+
+
 /* navigation */
 
 
@@ -146,10 +151,10 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 <div id="menutoggle" class="nav hide">
 <ul>
 
-<li><a href="home.html">Home</a></li>
+<li><a class="active" href="home.html">Home</a></li>
 <li><a href="about-us.html">About-us</a></li>
 <li class="dropdown">
-	<a href="events.html">Events<div id="toggle" class="xs-visible" style="float:right;">V</div></a>
+	<div id="toggle" class="xs-visible" style="float:right;">&nbsp;V</div><a href="events.html">Events</a>
 	<div id="togglee" class="a dropdown-content">
 		<a href="hr.html">National Human <br>Resources <br>Conference - 2017</a>
 		<a href="#">Power Summit - <br>Sultanate of Oman</a>
