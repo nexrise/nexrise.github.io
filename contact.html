@@ -83,19 +83,18 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 .bottomfooter li{display:inline;}
 .bottomfooter ul{padding:25px 0 20px 0;}
 
-.block {margin:auto; max-width:92%; }
-.addrblock {width:100%; background-color:#52575b; color:#fff; margin:16px 0 16px 0;box-sizing: border-box;
-    padding: 10px;}
+.border {border:0.1px solid;}
 
-.one, .two {border:0.1px solid; width:48%; display:block; float:left; position:static; min-width:400px; margin:5px; border-radius:10px;}
+h1 {padding-left:20px;}
+.contact {border:0.1px solid; margin:10px 10px 0 10px; border-radius:10px;}
 .contact p{padding:5px 5px 5px 20px;}
-
-.section1, .section2 {display:block;overflow:auto;}
 .call::before {background-image:url('img/call2.png');background-size: 25px 25px; display:inline-block; width: 25px; height: 25px; content:"";padding-right:8px;background-repeat:no-repeat;}
 .mail::before {background-image:url('img/mail2.png');background-size: 25px 25px; display:inline-block; width: 25px; height: 25px; content:""; padding-right:8px;background-repeat:no-repeat;}
 .designation::before {background-image:url('img/man2.png');background-size: 25px 25px; display:inline-block; width: 25px; height:25px; content:""; padding-right:8px; background-repeat:no-repeat;}
-
-
+.addrblock {width:92%; background-color:#52575b; color:#fff; margin:auto; margin-top:20px; box-sizing: border-box;
+    padding: 10px;}
+.map {max-width:450px;width:100%;height:250px;border:0;}
+.section2 {padding:;width:92%; margin:auto;margin-top:15px;}	
 </style>
 </head>
 
@@ -127,7 +126,7 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 <li class="dropdown">
 		<div id="toggle" class="xs-visible" style="float:right;">
 			<img id="arrowtoggle" class="arrowimg1" src="img/arrow.png">
-		</div><a class="active" href="events.html">Events</a>
+		</div><a href="events.html">Events</a>
 	<div id="togglee" class="a dropdown-content">
 		<a href="hr.html">National Human <br>Resources <br>Conference - 2017</a>
 		<a href="#">Power Summit - <br>Sultanate of Oman</a>
@@ -135,20 +134,20 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 		<a href="#"></a>
 	</div>
 </li>
-<li><a href="contact.html">Contact</a></li>
+<li><a  class="active" href="contact.html">Contact</a></li>
 
 </ul>
 </div>
 
 
 <!-- add stuff -->
-<div class="block">
 
-<div class="section1">
-<div class="contact">
 <h1>Contact-Us</h1>
 
-<div class="one">
+<div class="container" style="border:0;">
+
+<div class="col-sm-6">
+<div class="contact">
 <h2>Muhammed Khobaib</h2>
 
 
@@ -156,7 +155,10 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 <p class="mail">muhammed@nexrise-events.com</p>
 <p class="designation">Founder and Chief Executive Officer</p>
 </div>
-<div class="two">
+</div>
+
+<div class="col-sm-6">
+<div class="contact">
 <h2>Mohammed Akmal</h2>
 
 
@@ -164,27 +166,28 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 <p class="mail">akmal@nexrise-events.com</p>
 <p class="designation">Senior Project Manager & General Manager</p>
 </div>
-
-
-</div>
 </div>
 
-<div class="section2">
+</div>
+
+
+<div class="container" style="border:0;">
 <div class="addrblock">
 Bahrain
 </div>
-<div class="box">
+
+<div class="section2">
+
 <div class="addr">
 Bahrain
 </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d210377.3701637907!2d50.545009421712265!3d26.044724972563504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1505891643621" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d210377.3701637907!2d50.545009421712265!3d26.044724972563504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1505891643621"  allowfullscreen></iframe>
 <p class="call">
-+91 9035442545</p>
+00973-33217569</p>
 <p class="mail">info@nexrise-events.com
 </p>
 
-</div>
 </div>
 
 </div>
