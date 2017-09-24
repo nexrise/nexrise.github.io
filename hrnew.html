@@ -60,13 +60,12 @@ header {height :84px; overflow:hidden;}
 /* CONTENT */
 
 body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
+p {font: 300 normal 15px/1.4 Raleway,sans-serif; letter-spacing: .05em;}
 
 .firstblock {background-color:#ee6e12;border:0;margin-top:10px;color:white;}
 .center {height:439px; width:100%; background-position:center center;background-repeat:no-repeat;margin:auto;background-size: cover; }
 .secondblock {background-color:#626262;color:white;border:0;margin-top:10px;margin-bottom:10px;}
 
-.col-sm-6 {padding:0;}
-.col-sm-6>p,h2 {padding:10px 40px;text-align: justify;font-weight: 500;letter-spacing: .05em;}
 
 /* social */
 .sm {height:55px; width:55px;}
@@ -76,13 +75,18 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 .button {background-color:purple; height:23px; width:23%; color:white;border-radius:30px; margin:0px 1px; text-align:center; float:left; text-decoration:none; padding:1px;}
 .button:hover {background-color:#663399;}
 
-
-
 /* FOOTER */
 .bottomfooter {background-color:#626262;width:100%;text-align:center;color:#e0e0e0;height:80px; display:block; overflow:hidden;}
 .bottomfooter li{display:inline;}
 .bottomfooter ul{padding:25px 0 20px 0;}
 
+
+/* container */
+.container p {line-height:37px;}
+.hrbanner {display:block; margin:auto;}
+#eventcountdown {text-align:center;font-size:40px;color:#3f3f3f;}
+.mainevent {background-color:#626262;color:white;text-align:center;}
+.upslide {width:100px;height:100px;}
 </style>
 </head>
 
@@ -129,10 +133,61 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 
 
 <!-- add stuff -->
+<div class="container" style="border:0;">
+<img class="hrbanner" src="img/hr-event.png">
+</div>
+<p id="eventcountdown"></p>
 
+<div class="mainevent">
+<h2 class="">National Human Resource Conference – 2017</h2> 
+<h5 class="">6th December 2017 @ Crowne Plaza </h5>
+<h5 class="">Kingdom of Bahrain</h5>
+<h4 class="">About National HR Conference:</h4>
+<p class="">Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.
+We are committed to promoting diversity by increasing awareness of and valuing the differences among prospective and current members.
+</p>
+<p class="">As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organisational acceleration and business goals.
+</p>
+<p class="">The impact of mega events on human resources, particularly the World Expo 2020 and FIFA World Cup 2022, will further accelerate demand for a more professional approach to people strategies and policies.
+</p>
+</div>
 
+<div class="container">
 
+<div class="col-sm-3">
+<h5><center><b>Sponsoring Companies</b></center></h5>
+<marquee direction="up" height="250px">
+<img class="upslide" src="img/sponsoring/2.png"><br>
+<img class="upslide" src="img/sponsoring/3.jpg"><br>
+<img class="upslide" src="img/sponsoring/1.jpg"><br>
+<img class="upslide" src="img/sponsoring/44.png"><br>
+</marquee>
+</div>
 
+<div class="col-sm-6 chiefguest">
+<h2><center>Chief&nbsp;Guest</center></h2>
+<img class="img-responsive" src="img/speaker/1.jfpg" style="max-width:150px; margin:auto;">
+<b><u>Chief Guest:</u></b>
+<br><b>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa</b>
+<br>(National brand ambassador of the International Non-Olympic University)
+<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
+<br>(CEO & Chair Woman of Medpoint Design)
+<br>(CEO & Chair Woman of Nine Training Center)
+<br>(CEO & Chair Woman of 8 Printing Press)
+<br>(CEO of Bahrain This Week (Weekly Paper))
+<br>(CEO of Ahil Al Azim (Magazine))
+</div>
+
+<div class="col-sm-3">
+<h5><center><b>Participating Companies</b></center></h5>
+<marquee direction="up" height="250px">
+<img class="upslide" src="img/participating/1.png"><br>
+<img class="upslide" src="img/participating/2.png"><br>
+<img class="upslide" src="img/participating/3.jpg"><br>
+</marquee>
+</div>
+
+</div>
 
 <div class="container" style="border:0; height:; padding-top:10px; background-color:grey; overflow:hidden;">
 
@@ -202,6 +257,35 @@ $(document).ready(function(){
 	
 
 });
+
+// Set the date we're counting down to
+var countDownDate = new Date("dec 06, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="eventcountdown"
+    document.getElementById("eventcountdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("eventcountdown").innerHTML = "EVENT STARTED";
+    }
+}, 1000);
 
 	</script>
 </body>
