@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Al Najah Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+<script src="jquery-3.2.1.slim.min.js"></script>
+
+<style>
+.mySlides {display:none;border:1px solid blue;overflow:hidden;}
+
+.slideshow-container { max-width: 1000px;  margin: auto; height:250px; border:1px solid yellow; overflow:hidden;}
+
+.slidingimage {height:250px;width:200px;float:left;border:1px solid;overflow:hidden;}
+.slidingimage>img {width:100%; height:200px;}
+
+.dot {height: 13px;width: 13px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; border:1px solid ;
+}
+.active { background-color: #717171;}
+
+.fade {animation-name:fadein;animation-duration:2s;}
+.fade {animation-name:fadeout;animation-duration:3s;}
+@keyframes fadein {
+from{transform:translate(0px);}
+to{transform:translate(-100%);}
+}
+@keyframes fadeout {
+from{transform:translate(100%);}
+to{transform:translate(0px);}
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">H.E Shaikha Noora Bent Khalifa Al Khalifa</div>
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">Kasthuri Sridhar</div>
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">Dr. Suzanne White</div>
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">Dr. Clare Beckett</div>
+
+</div>
+
+<div class="mySlides fade">
+
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">Zahra Dagher</div>
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">speaker</div>
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">speaker</div>
+  <div class="slidingimage"><img src="img/speaker/blank.jpg">speaker</div>
+
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+	</script>
+</body>
+</html>
