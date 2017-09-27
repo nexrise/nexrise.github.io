@@ -88,60 +88,11 @@ p {font: 300 normal 15px/1.4 Raleway,sans-serif; letter-spacing: .05em;}
 .mainevent {background-color:#626262;color:white;text-align:center;}
 .upslide {width:100px;height:100px;}
 
-/*speakers*/
-.speakers>img, .partners>img {height:150px; width:150px; display:block; float:left;}
-
-.speakers,.partners {width:100%; overflow:hidden;}
-
-
-.mySlides {display:none}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  height:200px;
-  overflow:hidden;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-
-.mySlides>img {height:200px;width:200px;}
+.border {border:1px solid blue;}
+.imgbox {width:25%;height:200px;float:left;overflow:hidden;}
+.imgbox>img {width:100%;max-width:150px;height:150px;}
+.imgbox>p {margin:0; }
+.slideshow-container {overflow:hidden;height:200px;}
 
 </style>
 </head>
@@ -244,54 +195,39 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 </div>
 
 </div>
+<br><br>
 
-<div class="speakers">
+<div class="container">
+
+<div class="col-sm-9 border">
 Our Speakers
-<img class="" src="img/speaker/1.jpg">H.E Shaikha Noora Bent Khalifa Al Khalifa
-<img class="" src="img/speaker/3.jpg">Kasthuri Sridhar
-<img class="" src="img/speaker/2.jpg">Dr. Suzanne White
-<img class="" src="img/speaker/4.jpg">Dr. Clare Beckett
-<img class="" src="img/speaker/5.png">Zahra Dagher
-<img class="" src="img/speaker/blank.jpg">
-<img class="" src="img/speaker/blank.jpg">
-<img class="" src="img/speaker/blank.jpg">
-</div>
-
-<div class="partners">
-Media Partners
-<img src="img/media/2.jpg">
-<img src="img/media/1.jpg">
-</div>
-
 <div class="slideshow-container border">
 
 <div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img/speaker/1.jpg"><div class="text">H.E Shaikha Noora Bent Khalifa Al Khalifa</div>
-  <img src="img/speaker/3.jpg"><div class="text">Kasthuri Sridhar</div>
-  <img src="img/speaker/2.jpg"><div class="text">Dr. Suzanne White</div>
-  <img src="img/speaker/4.jpg"><div class="text">Dr. Clare Beckett</div>
+  
+  <div class="imgbox"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
+  <div class="imgbox"><img src="img/speaker/3.jpg"><p>Kasthuri Sridhar</p></div>
+  <div class="imgbox"><img src="img/speaker/2.jpg"><p>Dr. Suzanne White</p></div>
+  <div class="imgbox"><img src="img/speaker/4.jpg"><p>Dr. Clare Beckett</p></div>
   
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img/speaker/5.png"><div class="text">Zahra Dagher</div>
-  <img src="img/speaker/blank.jpg"><div class="text">speaker</div>
-  <img src="img/speaker/blank.jpg"><div class="text">speaker</div>
-  <img src="img/speaker/blank.jpg"><div class="text">speaker</div>
-  <div class="text"></div>
+  
+  <div class="imgbox"><img src="img/speaker/5.png"><p>Zahra Dagher</p></div>
+  <div class="imgbox"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
+  <div class="imgbox"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
+  <div class="imgbox"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
+  
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext"></div>
-  <div class="numbertext"></div>
-  <img src="img/speaker/1.jpg"><div class="text">H.E Shaikha Noora Bent Khalifa Al Khalifa</div>
-  <img src="img/speaker/3.jpg"><div class="text">Kasthuri Sridhar</div>
-  <img src="img/speaker/2.jpg"><div class="text">Dr. Suzanne White</div>
-  <img src="img/speaker/4.jpg"><div class="text">Dr. Clare Beckett</div>
-  <img src="img/speaker/4.jpg"><div class="text">Dr. Clare Beckett</div>
-  <div class="text"></div>
+  
+  <div class="imgbox"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
+  <div class="imgbox"><img src="img/speaker/3.jpg"><p>Kasthuri Sridhar</p></div>
+  <div class="imgbox"><img src="img/speaker/2.jpg"><p>Dr. Suzanne White</p></div>
+  <div class="imgbox"><img src="img/speaker/4.jpg"><p>Dr. Clare Beckett</p></div>
+  
 </div>
 
 </div>
@@ -302,6 +238,23 @@ Media Partners
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
+</div>
+
+<div class="col-sm-3" style="height:;">
+Media Partners
+<marquee direction="left" height="200px">
+<img src="img/media/2.jpg" style="width:200px;height:200px;">
+<img src="img/media/1.jpg" style="width:200px;height:200px;">
+</marquee>
+</div>
+
+
+</div>
+
+
+<br><br>
+
+
 
 <div class="container" style="border:0; height:; padding-top:10px; background-color:grey; overflow:hidden;">
 
