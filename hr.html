@@ -5,62 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="style.css">
 <script src="jquery-3.2.1.slim.min.js"></script>
 
 <style>
-body {margin:0;display:block;}
-header {height :84px; overflow:hidden;}
-.contactheader{ float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
-.contactnumber{ color: #ee6e12; font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
-/* menubar */
-.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
-.menu{height:22px;width:50px;}
-.linebar {border-radius: 2px;height:4px;width:40px;background-color:#ee6e12;}
-.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
-.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
-.linebar:nth-child(3) {transition: .5s;}
-.menuon{height:30px;width:40px;}
-.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
-.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
-.menuon>.linebar:nth-child(2) {opacity: 0;}
-.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
-
-/* navigation */
-.nav {border:0; overflow:hidden; height:;width:100%; background-color:#626262;}
-.nav>ul {list-style-type:none; margin:0; padding:0; overflow:hidden; width:350px;margin:auto;}
-.nav>ul>li {float:left;  display:block; }
-.nav a {padding:10px 12px; display:block; background-color:#626262;position: relative;z-index:2;overflow:hidden;color:white;text-decoration:none;}
-.nav a::after {position: absolute; content: ''; top:0; left: 50%; width: 0;  height: 100%;  background-color:#ee6e12; transform-origin:center;  transition:0.25s ease;  z-index:-1;}
-.nav a:hover::after {width:100%;left:0;}
-.nav .active {background-color:rgb(238, 110, 18);}
-.dropdown {float:left;}
-.dropdown-content {display:none;position:absolute;min-width:150px;top:122px;z-index:3;}
-@media only screen and (min-width:768px) {.dropdown:hover .dropdown-content {display:block;} }
-@media only screen and (max-width:768px) {
-.nav>ul>li {float:none;}
-.dropdown-content {top:82px;}
-}
-#toggle {width:50px; height:30px; margin-top:3px; overflow:hidden;}
-.a {display:none;}
-.b {display:block;}
-.arrowimg1 {margin-top:-74px;margin-left:5px;}
-.arrowimg2 {margin-top:4px;margin-left:5px;}
-@media only screen and (max-width:768px) {
-.nav, .nav a {background-color:rgb(244, 121, 32);}
-.nav .active {background-color:rgb(238, 110, 18);}
-.hide {display:none;}
-.show {display:block;}
-.dropdown-content {top:199px;}
-.nav>ul {width:300px;}
-}
-
-/* navigation */
-
-/* CONTENT */
-
-body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
-p {font: 300 normal 15px/1.4 Raleway,sans-serif; letter-spacing: .05em;}
 
 .firstblock {background-color:#ee6e12;border:0;margin-top:10px;color:white;}
 .center {height:439px; width:100%; background-position:center center;background-repeat:no-repeat;margin:auto;background-size: cover; }
@@ -75,12 +24,6 @@ p {font: 300 normal 15px/1.4 Raleway,sans-serif; letter-spacing: .05em;}
 .button {background-color:purple; height:23px; width:23%; color:white;border-radius:30px; margin:0px 1px; text-align:center; float:left; text-decoration:none; padding:1px;}
 .button:hover {background-color:#663399;}
 
-/* FOOTER */
-.bottomfooter {background-color:#626262;width:100%;text-align:center;color:#e0e0e0;height:80px; display:block; overflow:hidden;}
-.bottomfooter li{display:inline;}
-.bottomfooter ul{padding:25px 0 20px 0;}
-
-
 /* container */
 .container p {line-height:37px;}
 .hrbanner {display:block; margin:auto;}
@@ -94,6 +37,44 @@ p {font: 300 normal 15px/1.4 Raleway,sans-serif; letter-spacing: .05em;}
 .imgbox>p {margin:0; }
 .slideshow-container {overflow:hidden;height:200px;}
 
+.chiefguest {background-color:brown; text-align:center;}
+.chiefguest>img {width:150px; margin:auto; display:block;}
+
+.flow {height:350px;width:150px; margin:auto;overflow:hidden;}
+.upflowl>img, .upflowr>img {height:150px;width:150px;display:block;}
+.upflowl {animation-name:flowsl;animation-duration:7s;animation-iteration-count:infinite;animation-timing-function: linear;}
+.upflowr {animation-name:flowsr;animation-duration:7s;animation-iteration-count:infinite;animation-timing-function: linear;}
+@keyframes flowsl {
+from {margin-top:0px;}
+to {margin-top:-600px;}
+}
+@keyframes flowsr {
+from {margin-top:0px;}
+to {margin-top:-450px;}
+}
+@media only screen and (max-width:768px){
+.comp {width:49%;float:left;}
+}
+
+
+.flowleft{animation-name:flowlefts;animation-duration:7s;animation-iteration-count:infinite;animation-timing-function: linear; height:300px;display:inline-flex;}
+.flowleft>img {width:200px; height:200px; }
+@keyframes flowlefts {
+from {margin-left:0px;}
+to {margin-left:-400px;}
+}
+
+.partners {overflow:hidden; height:260px;}
+.partners>h2 {text-align:center; margin:10px 0;}
+
+
+.speakerblock {height:360px;overflow:hidden; border:1px solid;}
+.speakerblock>h2 {margin:10px 0;text-align:center;}
+/* 100% x 2slide */.speakermover {width:200%; display:inline-flex; overflow:hidden;transition: 1s} 
+
+.speakerimage { height:360px; width:24.5%;display:block; text-align:center;}
+.speakerimage>img {height:200px; width:90%; display:block; margin:auto;}
+.container {border:0;}
 </style>
 </head>
 
@@ -161,19 +142,9 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 
 <div class="container">
 
-<div class="col-sm-3">
-<h5><center><b>Sponsoring Companies</b></center></h5>
-<marquee direction="up" height="250px">
-<img class="upslide" src="img/sponsoring/2.png"><br>
-<img class="upslide" src="img/sponsoring/3.jpg"><br>
-<img class="upslide" src="img/sponsoring/1.jpg"><br>
-<img class="upslide" src="img/sponsoring/44.png"><br>
-</marquee>
-</div>
-
-<div class="col-sm-6 chiefguest">
+<div class="col-sm-6 chiefguest xs-visible">
 <h2><center>Chief&nbsp;Guest</center></h2>
-<img class="img-responsive" src="img/speaker/1.jpg" style="max-width:150px; margin:auto;">
+<img src="img/speaker/1.jpg"/>
 <b><u>Chief Guest:</u></b>
 <br><b>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa</b>
 <br>(National brand ambassador of the International Non-Olympic University)
@@ -185,13 +156,51 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 <br>(CEO of Ahil Al Azim (Magazine))
 </div>
 
-<div class="col-sm-3">
-<h5><center><b>Participating Companies</b></center></h5>
-<marquee direction="up" height="250px">
-<img class="upslide" src="img/participating/1.png"><br>
-<img class="upslide" src="img/participating/2.png"><br>
-<img class="upslide" src="img/participating/3.jpg"><br>
-</marquee>
+<div class="col-sm-3 comp">
+	<h5><center><b>Participating Companies</b></center></h5>
+	<div class="flow">
+		<div class="upflowl">
+		<img src="img/sponsoring/2.png">
+		<img src="img/sponsoring/3.jpg">
+		<img src="img/sponsoring/1.jpg">
+		<img src="img/sponsoring/44.png"><br>
+		<!-- same as above -->
+		<img src="img/sponsoring/2.png">
+		<img src="img/sponsoring/3.jpg">
+		<img src="img/sponsoring/1.jpg">
+		<img src="img/sponsoring/44.png">
+		</div>
+	</div>
+</div>
+
+
+<div class="col-sm-6 chiefguest xs-hidden">
+<h2><center>Chief&nbsp;Guest</center></h2>
+<img src="img/speaker/1.jpg"/>
+<b><u>Chief Guest:</u></b>
+<br><b>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa</b>
+<br>(National brand ambassador of the International Non-Olympic University)
+<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
+<br>(CEO & Chair Woman of Medpoint Design)
+<br>(CEO & Chair Woman of Nine Training Center)
+<br>(CEO & Chair Woman of 8 Printing Press)
+<br>(CEO of Bahrain This Week (Weekly Paper))
+<br>(CEO of Ahil Al Azim (Magazine))
+</div>
+
+<div class="col-sm-3 comp">
+	<h5><center><b>Participating Companies</b></center></h5>
+	<div class="flow">
+		<div class="upflowr">
+		<img src="img/participating/1.png">
+		<img src="img/participating/2.png">
+		<img src="img/participating/3.jpg">
+		<!-- same as above -->
+		<img src="img/participating/1.png">
+		<img src="img/participating/2.png">
+		<img src="img/participating/3.jpg">
+		</div>
+	</div>
 </div>
 
 </div>
@@ -199,53 +208,34 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 
 <div class="container">
 
-<div class="col-sm-9 border">
-Our Speakers
-<div class="slideshow-container border">
+<div class="col-sm-9 speakerblock">
+<h2>Our Speakers</h2>
+<div id="speakerstyle" class="speakermover">
+	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
+	<div class="speakerimage"><img src="img/speaker/3.jpg"><p>Kasthuri Sridhar</p></div>
+	<div class="speakerimage"><img src="img/speaker/2.jpg"><p>Dr. Suzanne White</p></div>
+	<div class="speakerimage"><img src="img/speaker/4.jpg"><p>Dr. Clare Beckett</p></div>
 
-<div class="mySlides fade">
-  
-  <div class="imgbox"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
-  <div class="imgbox"><img src="img/speaker/3.jpg"><p>Kasthuri Sridhar</p></div>
-  <div class="imgbox"><img src="img/speaker/2.jpg"><p>Dr. Suzanne White</p></div>
-  <div class="imgbox"><img src="img/speaker/4.jpg"><p>Dr. Clare Beckett</p></div>
-  
+	<div class="speakerimage"><img src="img/speaker/5.png"><p>Zahra Dagher</p></div>
+	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
+	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
+	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
 </div>
 
-<div class="mySlides fade">
-  
-  <div class="imgbox"><img src="img/speaker/5.png"><p>Zahra Dagher</p></div>
-  <div class="imgbox"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
-  <div class="imgbox"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
-  <div class="imgbox"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
-  
-</div>
-
-<div class="mySlides fade">
-  
-  <div class="imgbox"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
-  <div class="imgbox"><img src="img/speaker/3.jpg"><p>Kasthuri Sridhar</p></div>
-  <div class="imgbox"><img src="img/speaker/2.jpg"><p>Dr. Suzanne White</p></div>
-  <div class="imgbox"><img src="img/speaker/4.jpg"><p>Dr. Clare Beckett</p></div>
-  
-</div>
 
 </div>
-<br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-</div>
 
-<div class="col-sm-3" style="height:;">
-Media Partners
-<marquee direction="left" height="200px">
-<img src="img/media/2.jpg" style="width:200px;height:200px;">
-<img src="img/media/1.jpg" style="width:200px;height:200px;">
-</marquee>
+
+<div class="col-sm-3 partners">
+<h2>Media Partners<h2>
+<div class="flowleft">
+	<img src="img/media/2.jpg">
+	<img src="img/media/1.jpg">
+	<!-- same as above -->
+	<img src="img/media/2.jpg">
+	<img src="img/media/1.jpg">
+</div>
 </div>
 
 
@@ -354,25 +344,28 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+
+var slide = 1;
+var timer = 3000;
+setTimeout(function(){
+
+		if (slide == 1){
+		document.getElementById("speakerstyle").style.marginLeft = "-100%";
+		slide++;
+		}
+		
+		else {
+		document.getElementById("speakerstyle").style.marginLeft = "0px";
+		slide = 1;
+		}
+		
+		console.log(slide);
+		
+		
+		
+	setTimeout(arguments.callee, timer);
+}, timer);
 
 
 
