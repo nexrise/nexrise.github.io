@@ -28,17 +28,21 @@
 .container p {line-height:37px;}
 .hrbanner {display:block; margin:auto;}
 #eventcountdown {text-align:center;font-size:40px;color:#3f3f3f;}
-.mainevent {background-color:#626262;color:white;text-align:center;}
+.mainevent {background-color:#FF9800;color:white;text-align:center;}
+.mainevent>h2 {font-size:30px; color:blue;}
+.mainevent>h5 {font-size:20px; color:blue;}
+.mainevent>h4 {font-size:20px; color:blue;}
+.mainevent p { font-size:30px; }
 .upslide {width:100px;height:100px;}
 
 .border {border:1px solid blue;}
 .imgbox {width:25%;height:200px;float:left;overflow:hidden;}
 .imgbox>img {width:100%;max-width:150px;height:150px;}
-.imgbox>p {margin:0; }
+.imgbox>p {margin:0;}
 .slideshow-container {overflow:hidden;height:200px;}
 
-.chiefguest {background-color:brown; text-align:center;}
-.chiefguest>img {width:150px; margin:auto; display:block;}
+.chiefguest { background-color:#7f7d80; text-align:center; position:relative; border:1px solid; font-size:20px;}
+.chiefguest>img {width:250px; margin:auto; display:block; }
 
 .flow {height:350px;width:150px; margin:auto;overflow:hidden;}
 .upflowl>img, .upflowr>img {height:150px;width:150px;display:block;}
@@ -73,7 +77,7 @@ to {margin-left:-400px;}
 /* 100% x 2slide */.speakermover {width:200%; display:inline-flex; overflow:hidden;transition: 1s} 
 
 .speakerimage { height:360px; width:24.5%;display:block; text-align:center;}
-.speakerimage>img {height:200px; width:90%; display:block; margin:auto;}
+.speakerimage>img {height:200px; width:90%; max-width:150px; display:block; margin:auto;}
 .container {border:0;}
 </style>
 </head>
@@ -127,22 +131,23 @@ to {margin-left:-400px;}
 <p id="eventcountdown"></p>
 
 <div class="mainevent">
-<h2 class="">National Human Resource Conference – 2018</h2> 
-<h5 class="">17th January 2018 @ Crowne Plaza </h5>
-<h5 class="">Kingdom of Bahrain</h5>
-<h4 class="">About National HR Conference:</h4>
-<p class="">Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.
+<h2>National Human Resource Conference – 2018</h2> 
+<h5>17th January 2018 @ Crowne Plaza </h5>
+<h5>Kingdom of Bahrain</h5>
+<h4>About National HR Conference:</h4>
+<p>Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.
 We are committed to promoting diversity by increasing awareness of and valuing the differences among prospective and current members.
 </p>
-<p class="">As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organisational acceleration and business goals.
+<p>As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organisational acceleration and business goals.
 </p>
-<p class="">The impact of mega events on human resources, particularly the World Expo 2020 and FIFA World Cup 2022, will further accelerate demand for a more professional approach to people strategies and policies.
+<p>The impact of mega events on human resources, particularly the World Expo 2020 and FIFA World Cup 2022, will further accelerate demand for a more professional approach to people strategies and policies.
 </p>
 </div>
 
 <div class="container">
 
 <div class="col-sm-6 chiefguest xs-visible">
+
 <h2><center>Chief&nbsp;Guest</center></h2>
 <img src="img/speaker/1.jpg"/>
 <b><u>Chief Guest:</u></b>
@@ -175,6 +180,7 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 
 
 <div class="col-sm-6 chiefguest xs-hidden">
+
 <h2><center>Chief&nbsp;Guest</center></h2>
 <img src="img/speaker/1.jpg"/>
 <b><u>Chief Guest:</u></b>
@@ -211,15 +217,14 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 <div class="col-sm-9 speakerblock">
 <h2>Our Speakers</h2>
 <div id="speakerstyle" class="speakermover">
-	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mubarak Al Mansoori</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Dr. Zakir Malik</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Paul Lalovich</p></div>
 
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>speaker</p></div>
+	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
+	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mr. Saqr Al Hemeiri</p></div>
+	<div class="speakerimage"><img src="img/speaker/zakir.jpg"><p>Dr. Zakir Malik</p></div>
+	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mr. Paul Lalovich</p></div>
+	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mr. Mubarak Al Mansoori</p></div>
+	<div class="speakerimage"><img src=""><p></p></div>
+
 </div>
 
 
