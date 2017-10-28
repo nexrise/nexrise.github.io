@@ -70,15 +70,19 @@ to {margin-left:-400px;}
 
 .partners {overflow:hidden; height:260px;}
 .partners>h2 {text-align:center; margin:10px 0;}
-
-
-.speakerblock {height:360px;overflow:hidden; border:1px solid;}
-.speakerblock>h2 {margin:10px 0;text-align:center;}
-/* 100% x 2slide */.speakermover {width:200%; display:inline-flex; overflow:hidden;transition: 1s} 
-
-.speakerimage { height:360px; width:24.5%;display:block; text-align:center;}
-.speakerimage>img {height:200px; width:90%; max-width:150px; display:block; margin:auto;}
 .container {border:0;}
+
+.speakerblock {height:300px; overflow:hidden;position:relative; border:1px solid;}
+.speakermover {display:inline-flex;position:absolute; animation-name:speakerflow; animation-duration:7s; animation-iteration-count:infinite; animation-timing-function: linear;}
+.speakerimage {}
+.speakerimage>img { height:200px; width:200px;}
+.speakerimage>p {margin:0; line-height:20px; text-align:center;}
+.speakerblock>h2 {text-align:center; height:30px; margin:0;}
+@keyframes speakerflow {
+from {left:0px;}
+to {left:-1200px;} /* 200x6 */
+}
+
 </style>
 </head>
 
@@ -216,15 +220,23 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 
 <div class="col-sm-9 speakerblock">
 <h2>Our Speakers</h2>
-<div id="speakerstyle" class="speakermover">
+<div class="speakermover">
 
 	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mr. Saqr Al Hemeiri</p></div>
+	<div class="speakerimage"><img src="img/speaker/hemeiri.jpg"><p>Mr. Saqr Al Hemeiri</p></div>
 	<div class="speakerimage"><img src="img/speaker/zakir.jpg"><p>Dr. Zakir Malik</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mr. Paul Lalovich</p></div>
-	<div class="speakerimage"><img src="img/speaker/blank.jpg"><p>Mr. Mubarak Al Mansoori</p></div>
-	<div class="speakerimage"><img src=""><p></p></div>
-
+	<div class="speakerimage"><img src="img/speaker/paul.jpg"><p>Mr. Paul Lalovich</p></div>
+	<div class="speakerimage"><img src="img/speaker/mubarak.jpg"><p>Mr. Mubarak Al Mansoori</p></div>
+	<div class="speakerimage"><img src="img/speaker/seema.jpg"><p>Ms. Seema Nagrath Menon</p></div>
+	<!-- same as above -->
+	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
+	<div class="speakerimage"><img src="img/speaker/hemeiri.jpg"><p>Mr. Saqr Al Hemeiri</p></div>
+	<div class="speakerimage"><img src="img/speaker/zakir.jpg"><p>Dr. Zakir Malik</p></div>
+	<div class="speakerimage"><img src="img/speaker/paul.jpg"><p>Mr. Paul Lalovich</p></div>
+	<div class="speakerimage"><img src="img/speaker/mubarak.jpg"><p>Mr. Mubarak Al Mansoori</p></div>
+	<div class="speakerimage"><img src="img/speaker/seema.jpg"><p>Ms. Seema Nagrath Menon</p></div>
+	
+	
 </div>
 
 
@@ -351,26 +363,26 @@ var x = setInterval(function() {
 
 
 
-var slide = 1;
-var timer = 3000;
-setTimeout(function(){
-
-		if (slide == 1){
-		document.getElementById("speakerstyle").style.marginLeft = "-100%";
-		slide++;
-		}
+//var slide = 1;
+//var timer = 3000;
+//setTimeout(function(){
+//
+//		if (slide == 1){
+//		document.getElementById("speakerstyle").style.marginLeft = "-100%";
+//		slide++;
+//		}
 		
-		else {
-		document.getElementById("speakerstyle").style.marginLeft = "0px";
-		slide = 1;
-		}
+//		else {
+//		document.getElementById("speakerstyle").style.marginLeft = "0px";
+	//	slide = 1;
+//		}
 		
-		console.log(slide);
+//		console.log(slide);
 		
 		
 		
-	setTimeout(arguments.callee, timer);
-}, timer);
+//	setTimeout(arguments.callee, timer);
+// }, timer);
 
 
 
