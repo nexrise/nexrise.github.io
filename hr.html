@@ -21,10 +21,10 @@
 .container p {line-height:37px;}
 .hrbanner {display:block; margin:auto;}
 #eventcountdown {text-align:center;font-size:40px;color:#3f3f3f;}
-.mainevent {background-color:#FF9800;color:white;text-align:center;}
-.mainevent>h2 {font-size:30px; color:blue;}
-.mainevent>h5 {font-size:25px; color:blue;}
-.mainevent>h4 {font-size:25px; color:blue;}
+.mainevent {background-color:rgb(255, 229, 191);color:white;text-align:center;}
+.mainevent>h2 {font-size:30px; color:blue; text-transform:uppercase; font-weight:600; padding-top:20px;}
+.mainevent>h5 {font-size:25px; color:blue; margin:0px;}
+.mainevent>h4 {font-size:25px; color:blue; margin-top:15px;}
 .mainevent p { font-size:25px; font-weight: 400; color:black;}
 .upslide {width:100px;height:100px;}
 
@@ -61,14 +61,16 @@ from {margin-left:0px;}
 to {margin-left:-400px;}
 }
 
-.partners {overflow:hidden; height:260px;}
+.partners {overflow:hidden; height:260px; background-color:black; color:white; height:300px;}
 .partners>h2 {text-align:center; margin:10px 0;}
 .container {border:0;}
 
-.speakerblock {height:300px; overflow:hidden;position:relative; border:1px solid;}
-.speakermover {display:inline-flex;position:absolute; animation-name:speakerflow; animation-duration:12s; animation-iteration-count:infinite; animation-timing-function: linear;}
+.speakerblock {height:300px; overflow:hidden;position:relative; border:1px solid; max-width:1200px; background-color:black; color:white;}
+.speakermover {display:inline-flex; position:absolute; animation-name:speakerflow; animation-duration:12s; animation-iteration-count:infinite; animation-timing-function:linear;}
 .speakerimage {}
 .speakerimage>img { height:200px; width:200px;}
+.speakerimage>img:hover { border:1px solid blue;}
+.speakermover:hover { animation-play-state: paused;}
 .speakerimage>p {margin:0; line-height:20px; text-align:center;}
 .speakerblock>h2 {text-align:center; height:30px; margin:0;}
 @keyframes speakerflow {
@@ -162,14 +164,14 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 	<h4><center><b>Sponsoring Companies</b></center></h4>
 	<div class="flow">
 		<div class="upflowl">
-		<img src="img/sponsoring/.jpg">
-		<img src="img/sponsoring/3.jpg">
-		<img src="img/sponsoring/.jpg">
+		<img alt="sponsors" src="img/sponsoring/.jpg">
+		<img alt="sponsors" src="img/sponsoring/3.jpg">
+		<img alt="sponsors" src="img/sponsoring/.jpg">
 
 		<!-- same as above -->
-		<img src="img/sponsoring/.jpg">
-		<img src="img/sponsoring/3.jpg">
-		<img src="img/sponsoring/.jpg">
+		<img alt="sponsors" src="img/sponsoring/.jpg">
+		<img alt="sponsors" src="img/sponsoring/3.jpg">
+		<img alt="sponsors" src="img/sponsoring/.jpg">
 
 		</div>
 	</div>
@@ -240,10 +242,10 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 <div class="col-sm-3 partners">
 <h2>Media Partners<h2>
 <div class="flowleft">
-	<img src="img/media">
+	<img style="margin:auto;" alt="media partners" src="img/media">
 	<img src="img/media/1.jpg">
 	<!-- same as above -->
-	<img src="img/media">
+	<img style="margin:auto;" alt="media partners" src="img/media">
 	<img src="img/media/1.jpg">
 </div>
 </div>
