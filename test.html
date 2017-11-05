@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NexRise Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#containSlide {background-color:yellow; height:200px; overflow:hidden; position:relative; border:2px solid;}
+#smoothSlide {height:200px; position:relative; display:inline-flex;}
+#image {height:200px; width:200px; background-color:red;border: 1px solid blue; box-sizing: border-box;}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="containSlide">
+<div id="smoothSlide">
+<div id="image">1</div>
+<div id="image">2</div>
+<div id="image">3</div>
+<div id="image">4</div>
+<div id="image">5</div>
+<div id="image">6</div>
+
+</div>
+
+</div>
+6x200=1200
+12x200=2400
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="test"></div>
+<div id="test1"></div>
+<div id="test2"></div>
+
+
+
+<script>
+var elem = document.getElementById("smoothSlide");
+var id = setInterval(frame, 15); 
+var pos = 0;
+var mover = elem.offsetWidth;
+function frame() {
+    if (pos == mover) {pos = 0;}
+	else {pos++; elem.style.left = "-" + pos + "px"; }
+}
+
+elem.appendChild(elem.cloneNode(true));
+
+
+
+
+document.getElementById("test").innerHTML = elem;
+document.getElementById("test1").innerHTML = id;
+document.getElementById("test2").innerHTML = mover;
+
+
+</script>
+</body>
+</html>

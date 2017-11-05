@@ -65,9 +65,16 @@ to {margin-left:-400px;}
 .partners>h2 {text-align:center; margin:10px 0;}
 .container {border:0;}
 
+@media only screen and (min-width:768px){ 
+.reorder {display: flex; flex-direction: row;} 
+.order1 {order:2;}
+.order2 {order:1;}
+.order3 {order:3;}
+}
+
 .speakerblock {height:300px; overflow:hidden;position:relative; border:1px solid; max-width:1200px; background-color:black; color:white;}
 .speakermover {display:inline-flex; position:absolute; animation-name:speakerflow; animation-duration:12s; animation-iteration-count:infinite; animation-timing-function:linear;}
-.speakerimage {width:200px;}
+.speakerimage {}
 .speakerimage>img { height:200px; width:200px;}
 .speakerimage>img:hover { border:1px solid blue;}
 .speakermover:hover { animation-play-state: paused;}
@@ -77,6 +84,8 @@ to {margin-left:-400px;}
 from {left:0px;}
 to {left:-1200px;} /* 200x6 */
 }
+
+.main-number::after {content:"00973-33217569";}
 
 </style>
 </head>
@@ -130,80 +139,57 @@ to {left:-1200px;} /* 200x6 */
 <p id="eventcountdown"></p>
 
 <div class="mainevent">
-<h2>National Human Resource Conference – 2018</h2> 
-<h5>17th January 2018 @ Crowne Plaza </h5>
-<h5>Kingdom of Bahrain</h5>
-<h4>About National HR Conference:</h4>
-<p>Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.
-We are committed to promoting diversity by increasing awareness of and valuing the differences among prospective and current members.
-</p>
-<p>As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organisational acceleration and business goals.
-</p>
+<h2>Oman Human Resource Vision 2018</h2> 
+<h5>Sultanate of Oman</h5>
+<h5>15 February 2018</h5>
+<p>Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.</p>
+
+<p>We are committed to promoting diversity by increasing awareness of and valuing the differences among prospective and current members.</p>
+
+<p>As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organizational acceleration and business goals.</p>
+
 <p>The impact of mega events on human resources, particularly the World Expo 2020 and FIFA World Cup 2022, will further accelerate demand for a more professional approach to people strategies and policies.
 <br><br></p>
 </div>
 
-<div class="container">
+<div class="container reorder">
 
-<div class="col-sm-6 chiefguest xs-visible">
+<div class="col-sm-6 chiefguest order1">
 
 <h2><center>Chief&nbsp;Guest</center></h2>
-<img src="img/speaker/1.jpg"/>
+<img height="350px" width="250px" alt="Cheif Guest" src=""/>
 <b><u>Chief Guest:</u></b>
-<br><b>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa</b>
-<br>(National brand ambassador of the International Non-Olympic University)
-<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
-<br>(CEO & Chair Woman of Medpoint Design)
-<br>(CEO & Chair Woman of Nine Training Center)
-<br>(CEO & Chair Woman of 8 Printing Press)
-<br>(CEO of Bahrain This Week (Weekly Paper))
-<br>(CEO of Ahil Al Azim (Magazine))
+<br><b>Chief&nbsp;Guest name</b>
 </div>
 
-<div class="col-sm-3 comp">
+<div class="col-sm-3 comp order2">
 	<h4><center><b>Sponsoring Companies</b></center></h4>
 	<div class="flow">
 		<div class="upflowl">
-		<img alt="sponsors" src="img/sponsoring/.jpg">
-		<img alt="sponsors" src="img/sponsoring/3.jpg">
-		<img alt="sponsors" src="img/sponsoring/.jpg">
+		<img alt="sponsors" src="">
+		<img alt="sponsors" src="">
+		<img alt="sponsors" src="">
 
 		<!-- same as above -->
-		<img alt="sponsors" src="img/sponsoring/.jpg">
-		<img alt="sponsors" src="img/sponsoring/3.jpg">
-		<img alt="sponsors" src="img/sponsoring/.jpg">
+		<img alt="sponsors" src="">
+		<img alt="sponsors" src="">
+		<img alt="sponsors" src="">
 
 		</div>
 	</div>
 </div>
 
-
-<div class="col-sm-6 chiefguest xs-hidden">
-
-<h2><center>Chief&nbsp;Guest</center></h2>
-<img src="img/speaker/1.jpg"/>
-<b><u>Chief Guest:</u></b>
-<br><b>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa</b>
-<br>(National brand ambassador of the International Non-Olympic University)
-<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
-<br>(CEO & Chair Woman of Medpoint Design)
-<br>(CEO & Chair Woman of Nine Training Center)
-<br>(CEO & Chair Woman of 8 Printing Press)
-<br>(CEO of Bahrain This Week (Weekly Paper))
-<br>(CEO of Ahil Al Azim (Magazine))
-</div>
-
-<div class="col-sm-3 comp">
+<div class="col-sm-3 comp order3">
 	<h4><center><b>Participating Companies</b></center></h4>
 	<div class="flow">
 		<div class="upflowr">
-		<img src="img/participating/1.png">
-		<img src="img/participating/2.png">
-		<img src="img/participating/3.jpg">
+		<img alt="Participat" src="">
+		<img alt="Participat" src="">
+		<img alt="Participat" src="">
 		<!-- same as above -->
-		<img src="img/participating/1.png">
-		<img src="img/participating/2.png">
-		<img src="img/participating/3.jpg">
+		<img alt="Participat" src="">
+		<img alt="Participat" src="">
+		<img alt="Participat" src="">
 		</div>
 	</div>
 </div>
@@ -217,19 +203,20 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 <h2>Our Speakers</h2>
 <div class="speakermover">
 
-	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
-	<div class="speakerimage"><img src="img/speaker/hemeiri.jpg"><p>Mr. Saqr Al Hemeiri</p></div>
-	<div class="speakerimage"><img src="img/speaker/zakir.jpg"><p>Dr. Zakir Malik</p></div>
-	<div class="speakerimage"><img src="img/speaker/paul.jpg"><p>Mr. Paul Lalovich</p></div>
-	<div class="speakerimage"><img src="img/speaker/mansoori.png"><p>Mr. Mubarak Al Mansoori</p></div>
-	<div class="speakerimage"><img src="img/speaker/seema.jpg"><p>Ms. Seema Nagrath Menon</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	
 	<!-- same as above -->
-	<div class="speakerimage"><img src="img/speaker/1.jpg"><p>H.E Shaikha Noora Bent Khalifa Al Khalifa</p></div>
-	<div class="speakerimage"><img src="img/speaker/hemeiri.jpg"><p>Mr. Saqr Al Hemeiri</p></div>
-	<div class="speakerimage"><img src="img/speaker/zakir.jpg"><p>Dr. Zakir Malik</p></div>
-	<div class="speakerimage"><img src="img/speaker/paul.jpg"><p>Mr. Paul Lalovich</p></div>
-	<div class="speakerimage"><img src="img/speaker/mansoori.png"><p>Mr. Mubarak Al Mansoori</p></div>
-	<div class="speakerimage"><img src="img/speaker/seema.jpg"><p>Ms. Seema Nagrath Menon</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
 	
 	
 </div>
@@ -242,11 +229,11 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 <div class="col-sm-3 partners">
 <h2>Media Partners<h2>
 <div class="flowleft">
-	<img style="margin:auto;" alt="media partners" src="img/media">
-	<img src="img/media/1.jpg">
+	<img style="" alt="media partners" src="">
+	<img style="" alt="media partners" src="">
 	<!-- same as above -->
-	<img style="margin:auto;" alt="media partners" src="img/media">
-	<img src="img/media/1.jpg">
+	<img style="" alt="media partners" src="">
+	<img style="" alt="media partners" src="">
 </div>
 </div>
 
@@ -328,7 +315,7 @@ $(document).ready(function(){
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("jan 17, 2018 00:00:00").getTime();
+var countDownDate = new Date("feb 15, 2018 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
