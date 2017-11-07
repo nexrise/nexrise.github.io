@@ -214,7 +214,7 @@ to {left:-1200px;} /* 200x6 */
 	<div id="copy3">
 	<div class="speakerimage"><img alt="speakerimage" src="img/oman/khonji.jpg"><p>Mr. Qais Al Khonji</p></div>
 	<div class="speakerimage"><img alt="speakerimage" src="img/oman/paul.jpg"><p>Mr. Paul Glendhill</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/oman/saadi.jpg"><p>Mr. Muhammad Al Saadi</p></div>
 	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
 	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
 	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
@@ -351,15 +351,30 @@ document.getElementById("upflowr").appendChild(document.getElementById("copy2").
 document.getElementById("speakermover").appendChild(document.getElementById("copy3").cloneNode(true));
 document.getElementById("flowleft").appendChild(document.getElementById("copy4").cloneNode(true));
 
-var slide = 1;
+
+// SLIDES //
+var slide = 0;
 var timer = 3000;
 setTimeout(function(){
 
-console.log("next slide");
+var slidenos = document.getElementById("slideshow").children;
+
+if (slide >= slidenos.length-1) {
+	slidenos[slide].classList.remove('show');
+	slide = 0;
+	slidenos[slide].classList.add('show');
+}
+else {
+	slidenos[slide].classList.remove('show');
+	slide++;
+	slidenos[slide].classList.add('show');
+}
+
+console.log(slide, slidenos.length-1);
 
 	setTimeout(arguments.callee, timer);
 }, timer);
-
+// SLIDES END //
 
 </script>
 </body>
