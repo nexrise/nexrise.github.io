@@ -24,15 +24,48 @@ body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 .border {border:0.1px solid;}
 
 h1 {padding-left:20px;}
-.contact {border:.5px solid; margin:10px 10px 0 10px; border-radius:10px;}
+.contact {border:.5px solid; margin:10px 10px 0 10px; border-radius:10px; background-color:#fdf9f9;}
 .contact p{padding:5px 5px 5px 20px;}
 .call::before {background-image:url('img/call2.png');background-size: 25px 25px; display:inline-block; width: 25px; height: 25px; content:"";padding-right:8px;background-repeat:no-repeat;}
 .mail::before {background-image:url('img/mail2.png');background-size: 25px 25px; display:inline-block; width: 25px; height: 25px; content:""; padding-right:8px;background-repeat:no-repeat;}
 .designation::before {background-image:url('img/man2.png');background-size: 25px 25px; display:inline-block; width: 25px; height:25px; content:""; padding-right:8px; background-repeat:no-repeat;}
-.addrblock {width:92%; background-color:#52575b; color:#fff; margin:auto; margin-top:20px; box-sizing: border-box;
+.addrblock {width:100%; background-color:#52575b; color:#fff; margin:auto; margin-top:20px; box-sizing: border-box;
     padding: 10px;}
-.map {max-width:450px;width:100%;height:250px;border:0;}
-.section2 {padding:;width:92%; margin:auto;margin-top:15px;}	
+
+.mapcontain {max-width:600px;  margin:auto; margin-top:20px;}
+.map {max-width:650px;width:100%;height:250px;border:0;}
+
+
+.mailbox {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
 </style>
 </head>
 
@@ -108,29 +141,53 @@ h1 {padding-left:20px;}
 
 </div>
 
-
-<div class="container" style="border:0;">
 <div class="addrblock">
 Bahrain
 </div>
 
-<div class="section2">
 
-<div class="addr">
-Bahrain
-</div>
+<div class="container" style="border:0; background-color:#f2f2f2;">
+<div class="col-sm-6">
 
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.0537260719575!2d50.53454927714327!3d26.240215671267755!2m3!1f90!2f39.41789957698271!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x0%3A0xa9598925b58eb298!2sACT+Pro+Consultancy+%26+Business+Services!5e1!3m2!1sen!2sin!4v1509918581144" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="mapcontain">
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.0537260719575!2d50.53454927714327!3d26.240215671267755!2m3!1f90!2f39.41789957698271!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x0%3A0xa9598925b58eb298!2sACT+Pro+Consultancy+%26+Business+Services!5e1!3m2!1sen!2sin!4v1509918581144" frameborder="0" style="border:0" allowfullscreen></iframe>
 <p class="call">
 00973-33217569</p>
 <p class="mail">info@nexrise-events.com
 </p>
-
-</div>
-
 </div>
 
 
+</div>
+
+<div class="col-sm-6 mailbox">
+
+  <form action="mailto:muhammed@nexrise-events.com"  method="post" enctype="text/plain">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Bahrain">Bahrain</option>
+      <option value="UAE">UAE</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Oman">Oman</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+</div>
+
+ 
 
 
 
@@ -173,11 +230,11 @@ Bahrain
 <ul>
 <li>© Copyright&nbsp;&nbsp;|&nbsp;&nbsp;</li>
 <li>Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-<li><a style="color:#b3afaf;">Web Design by musab</a></li>
+<li><a href="mdmsb.github.io" style="color:#b3afaf; text-decoration:none;">Web Design by musab</a></li>
 </ul>
 
 </div>
-  
+	
 
 
 
