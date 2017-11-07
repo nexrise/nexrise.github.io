@@ -15,12 +15,13 @@
 .center {height:439px; width:100%; background-position:center center;background-repeat:no-repeat;margin:auto;background-size: cover; }
 .secondblock {background-color:#626262;color:white;border:0;margin-top:10px;margin-bottom:10px;}
 
-
+#slideshow {width:100%; height:400px; overflow:hidden; border:1px solid;}
+.banner {display:none; height:400px;  background-position:center center; background-repeat:no-repeat; background-color:black;}
+.show {display:block;}
 
 /* container */
 .container p {line-height:37px;}
-.hrbanner {display:block; margin:auto;}
-#eventcountdown {text-align:center;font-size:40px;color:#3f3f3f;}
+#eventcountdown {text-align:center;font-size:40px;color:#3f3f3f; height:60px;}
 .mainevent {background-color:rgb(255, 229, 191);color:white;text-align:center;}
 .mainevent>h2 {font-size:30px; color:blue; text-transform:uppercase; font-weight:600; padding-top:20px;}
 .mainevent>h5 {font-size:25px; color:blue; margin:0px;}
@@ -38,7 +39,7 @@
 .chiefguest>img {width:250px; margin:auto; display:block; }
 
 .flow {height:350px;width:150px; margin:auto;overflow:hidden;}
-.upflowl>img, .upflowr>img {height:150px;width:150px;display:block;}
+.upflowl>#copy1>img, .upflowr>#copy2>img {height:150px;width:150px;display:block;}
 .upflowl {animation-name:flowsl;animation-duration:7s;animation-iteration-count:infinite;animation-timing-function: linear;}
 .upflowr {animation-name:flowsr;animation-duration:7s;animation-iteration-count:infinite;animation-timing-function: linear;}
 @keyframes flowsl {
@@ -55,7 +56,8 @@ to {margin-top:-450px;}
 
 
 .flowleft{animation-name:flowlefts;animation-duration:7s;animation-iteration-count:infinite;animation-timing-function: linear; height:300px;display:inline-flex;}
-.flowleft>img {width:200px; height:200px; }
+.flowleft>#copy4>img {width:200px; height:200px; }
+#copy4{display:inline-flex;}
 @keyframes flowlefts {
 from {margin-left:0px;}
 to {margin-left:-400px;}
@@ -72,10 +74,10 @@ to {margin-left:-400px;}
 .order3 {order:3;}
 }
 
-.speakerblock {height:300px; overflow:hidden;position:relative; border:1px solid; max-width:1200px; background-color:black; color:white;}
-.speakermover {display:inline-flex; position:absolute; animation-name:speakerflow; animation-duration:12s; animation-iteration-count:infinite; animation-timing-function:linear;}
-.speakerimage {}
-.speakerimage>img { height:200px; width:200px;}
+.speakerblock {height:300px; overflow:hidden; position:relative; border-right:1px solid brown; max-width:1200px; background-color:black; color:white;}
+.speakermover {display:inline-flex; position:absolute; animation-name:speakerflow; animation-duration:12s; animation-iteration-count:infinite; animation-timing-function:linear; width:1200px;}
+#copy3 {display:inline-flex;}
+.speakerimage>img { height:200px; width:200px; display:block;}
 .speakerimage>img:hover { border:1px solid blue;}
 .speakermover:hover { animation-play-state: paused;}
 .speakerimage>p {margin:0; line-height:20px; text-align:center;}
@@ -86,6 +88,7 @@ to {left:-1200px;} /* 200x6 */
 }
 
 .main-number::after {content:"00973-33217569";}
+
 
 </style>
 </head>
@@ -133,9 +136,21 @@ to {left:-1200px;} /* 200x6 */
 <br>
 
 <!-- add stuff -->
-<div class="container" style="border:0;">
-<img class="hrbanner" src="img/hr-event.png">
+<div class="container" style="">
+<div id="slideshow">
+<div class="banner show" style="background-image:url('img/oman/1.jpeg');"></div>	
+<div class="banner" style="background-image:url('img/oman/2.jpeg');"></div>
+<div class="banner" style="background-image:url('img/oman/3.jpeg');"></div>
+<div class="banner" style="background-image:url('img/oman/4.jpeg');"></div>
+<div class="banner" style="background-image:url('img/oman/5.jpg');"></div>
+<div class="banner" style="background-image:url('img/oman/6.jpeg');"></div>
+<div class="banner" style="background-image:url('img/oman/7.jpg');"></div>
+<div class="banner" style="background-image:url('img/oman/8.jpeg');"></div>
+<div class="banner" style="background-image:url('img/oman/9.jpg');"></div>
 </div>
+</div>
+
+
 <p id="eventcountdown"></p>
 
 <div class="mainevent">
@@ -165,16 +180,12 @@ to {left:-1200px;} /* 200x6 */
 <div class="col-sm-3 comp order2">
 	<h4><center><b>Sponsoring Companies</b></center></h4>
 	<div class="flow">
-		<div class="upflowl">
-		<img alt="sponsors" src="">
-		<img alt="sponsors" src="">
-		<img alt="sponsors" src="">
-
-		<!-- same as above -->
-		<img alt="sponsors" src="">
-		<img alt="sponsors" src="">
-		<img alt="sponsors" src="">
-
+		<div id="upflowl" class="upflowl">
+			<div id="copy1">
+			<img alt="sponsors" src="">
+			<img alt="sponsors" src="">
+			<img alt="sponsors" src="">
+			</div>
 		</div>
 	</div>
 </div>
@@ -182,14 +193,12 @@ to {left:-1200px;} /* 200x6 */
 <div class="col-sm-3 comp order3">
 	<h4><center><b>Participating Companies</b></center></h4>
 	<div class="flow">
-		<div class="upflowr">
-		<img alt="Participat" src="">
-		<img alt="Participat" src="">
-		<img alt="Participat" src="">
-		<!-- same as above -->
-		<img alt="Participat" src="">
-		<img alt="Participat" src="">
-		<img alt="Participat" src="">
+		<div id="upflowr" class="upflowr">
+			<div id="copy2">
+			<img alt="Participat" src="">
+			<img alt="Participat" src="">
+			<img alt="Participat" src="">
+			</div>
 		</div>
 	</div>
 </div>
@@ -201,39 +210,29 @@ to {left:-1200px;} /* 200x6 */
 
 <div class="col-sm-9 speakerblock">
 <h2>Our Speakers</h2>
-<div class="speakermover">
+<div id="speakermover" class="speakermover">
+	<div id="copy3">
+	<div class="speakerimage"><img alt="speakerimage" src="img/oman/khonji.jpg"><p>Mr. Qais Al Khonji</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/oman/paul.jpg"><p>Mr. Paul Glendhill</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
+	</div>
 
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	
-	<!-- same as above -->
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>name</p></div>
-	
-	
+
 </div>
-
-
 </div>
 
 
 
 <div class="col-sm-3 partners">
 <h2>Media Partners<h2>
-<div class="flowleft">
-	<img style="" alt="media partners" src="">
-	<img style="" alt="media partners" src="">
-	<!-- same as above -->
-	<img style="" alt="media partners" src="">
-	<img style="" alt="media partners" src="">
+<div id="flowleft" class="flowleft">
+	<div id="copy4">
+		<img style="" alt="media partners" src="">
+		<img style="" alt="media partners" src="">
+	</div>
 </div>
 </div>
 
@@ -286,7 +285,7 @@ to {left:-1200px;} /* 200x6 */
 </ul>
 
 </div>
-  
+
 
 
 
@@ -344,30 +343,24 @@ var x = setInterval(function() {
 }, 1000);
 
 
+// var elmnt = document.getElementById("copy");
+// var cln = elmnt.cloneNode(true);
+// document.getElementById("upflowl").appendChild(cln);
+document.getElementById("upflowl").appendChild(document.getElementById("copy1").cloneNode(true));
+document.getElementById("upflowr").appendChild(document.getElementById("copy2").cloneNode(true));
+document.getElementById("speakermover").appendChild(document.getElementById("copy3").cloneNode(true));
+document.getElementById("flowleft").appendChild(document.getElementById("copy4").cloneNode(true));
 
-//var slide = 1;
-//var timer = 3000;
-//setTimeout(function(){
-//
-//		if (slide == 1){
-//		document.getElementById("speakerstyle").style.marginLeft = "-100%";
-//		slide++;
-//		}
-		
-//		else {
-//		document.getElementById("speakerstyle").style.marginLeft = "0px";
-	//	slide = 1;
-//		}
-		
-//		console.log(slide);
-		
-		
-		
-//	setTimeout(arguments.callee, timer);
-// }, timer);
+var slide = 1;
+var timer = 3000;
+setTimeout(function(){
+
+console.log("next slide");
+
+	setTimeout(arguments.callee, timer);
+}, timer);
 
 
-
-	</script>
+</script>
 </body>
 </html>
