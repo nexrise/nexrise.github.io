@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NexRise Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
+
+<style>
+ body{   font: 300 normal 15px/1.4 Raleway,sans-serif;  letter-spacing: .05em;}
+
+.contain {position:relative; width:100%; height:400px; border:.5px solid;} 
+.containslide {height:400px; width:; overflow:hidden; position:absolute; left:; }
+#banner {height:400px; width:100px;display:inline-flex;}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="contain">
+<div id="slider" class="containslide">
+<div id="banner" style="background-image:url('img/oman/1.jpeg');"></div>	
+<div id="banner" style="background-image:url('img/oman/2.jpeg');"></div>
+<div id="banner" style="background-image:url('img/oman/3.jpeg');"></div>
+<div id="banner" style="background-image:url('img/oman/4.jpeg');"></div>
+<div id="banner" style="background-image:url('img/oman/5.jpg');"></div>
+<div id="banner" style="background-image:url('img/oman/6.jpeg');"></div>
+<div id="banner" style="background-image:url('img/oman/7.jpg');"></div>
+<div id="banner" style="background-image:url('img/oman/8.jpeg');"></div>
+<div id="banner" style="background-image:url('img/oman/9.jpg');"></div>
+</div>
+</div>
+
+
+
+<script>
+
+
+// SLIDES //
+var slide = document.getElementById("slider").children.length;
+
+var widths = document.getElementById("slider");
+	
+
+var timer = 500;
+setTimeout(function(){
+
+
+
+
+
+console.log(slide, widths, widths.children.style.width);
+
+	setTimeout(arguments.callee, timer);
+}, timer);
+// SLIDES END //
+
+</script>
+</body>
+</html>
