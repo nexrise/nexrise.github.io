@@ -61,5 +61,7 @@ header {height :84px; overflow:hidden;}
 @media only screen and (max-width:600px) {.section_button {width:100%;}}
 
 .logoarb {float:right; height:80px; width:200px;}
-.logoarbfooter {display:block; width:350px; height:200px; margin:auto;}
+.logoarbfooter {display:block; max-height:160px; width:100%; max-width:400px; margin:auto;}
 .logoengfooter {display:block; max-height:160px; width:100%; max-width:500px; margin:auto;}
+
+.bottomcontent {border:0; height:; padding-top:10px; background-color:grey; overflow:hidden;}
