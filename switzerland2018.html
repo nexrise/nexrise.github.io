@@ -28,10 +28,10 @@
 .container p {line-height:37px;}
 #eventcountdown {text-align:center;font-size:40px;color:#3f3f3f; height:60px;}
 .mainevent {background-color:rgb(255, 229, 191);color:white;text-align:center;}
-.mainevent>h2 {font-size:30px; color:White; text-transform:uppercase; font-weight:600; padding-top:20px;}
+.mainevent>h2 {font-size:30px; color:White; text-transform:uppercase; font-weight:600; padding-top:20px; margin-top:0px;}
 .mainevent>h5 {font-size:25px; color:White; margin:0px;}
 .mainevent>h4 {font-size:25px; color:White; margin-top:15px;}
-.mainevent p { font-size:25px; font-weight: 400; color:black;}
+.mainevent p { font-size:25px; font-weight: 400; color:black;margin-bottom:0px; padding-bottom:20px;}
 .upslide {width:100px;height:100px;}
 
 .mainevent2 {background-color:#626262; color:white;}
@@ -70,7 +70,7 @@ from {margin-left:0px;}
 to {margin-left:-400px;}
 }
 
-.partners {overflow:hidden; background-color:black; color:white; height:320px;}
+.partners {overflow:hidden; background-color:black; color:white; height:380px;}
 .partners>h2 {text-align:center; margin:10px 0;}
 .container {border:0;}
 
@@ -81,7 +81,7 @@ to {margin-left:-400px;}
 .order3 {order:3;}
 }
 
-.speakerblock {height:320px; overflow:hidden; position:relative; border-right:1px solid brown; max-width:1200px; background-color:black; color:white;}
+.speakerblock {height:380px; overflow:hidden; position:relative; border-right:1px solid brown; max-width:1200px; background-color:black; color:white;}
 .speakermover {display:inline-flex; position:absolute; animation-name:speakerflow; animation-duration:20s; animation-iteration-count:infinite; animation-timing-function:linear; width:1200px;}
 #copy3 {display:inline-flex;}
 .speakerimage>img { height:200px; width:200px; display:block;}
@@ -96,16 +96,37 @@ to {left:-2800px;} /* 200x14 */
 
 .main-number::after {content:"00973-33217569";}
 
-.speakercountry {color:orange;}
+.speakername {color:orange;}
+.speakerposition {}
+.speakerwork {color:orange;}
+.speakercountry {color:;}
 
-.slidetextmain {width:100%;height:30px; overflow:hidden; border:1px solid black;}
+.slidetextmain {width:100%;height:30px; overflow:hidden; border:0px solid black;}
 .slidetext {width:3700px;}
-.slidetextin {width:1850px; color:black; font-size:20px; float:left;}
+.slidetextin {width:1850px; color:blue; font-size:20px; float:left;}
 .floater {animation-name:flower;animation-duration:20s;animation-iteration-count:infinite;animation-timing-function: linear;}
 @keyframes flower{
 from {margin-left:0px;}
 to {margin-left:-1850px;}
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: ;
+    border-radius: 5px;box-sizing:border-box;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardcontainer {
+    padding: 2px 16px; width:;margin:auto; box-sizing:border-box; overflow:none;
+}
+.cardcontainer>.col-sm-9{}
+.cardcontainer>.col-sm-3{}
+
 
 </style>
 </head>
@@ -155,9 +176,9 @@ NexRise has quickly evolved to be one of the best premier in event-planning and 
 <div class="slidetext">
 <div class="slidetextin floater">
 SPECIAL DELEGATES PROMOTION
-15% Discounts: Step Into The Conference With This Special Discount On Registering 10+ Delegates
-2000+ Attendees
-500+ Companies
+15% Discounts: Step Into The Conference With This Special Discount On Registering 10+ Delegates.
+2000+ Attendees,
+500+ Companies,
 100+ Sponsors. . .
 </div>
 		<div  class="slidetextin">
@@ -172,8 +193,8 @@ SPECIAL DELEGATES PROMOTION
 
 <div class="mainevent mainevent2">
 <h2><u>Global Human Resource & Leadership Summit – 2018 Switzerland. </u></h2> 
-<h5>Convention Center - Zurich July 25 -26, 2018</h5>
-<h5>Switzerland</h5>
+<h5>Halle 622 | July 25 - 26, 2018</h5>
+<h5>Zurich - Switzerland</h5>
 <h2 style="color:white;">About GLOBAL HUMAN RESOURCE & LEADERSHIP SUMMIT – 2018:</h2>
 <p style="color:white;">Human Resources Management dedicates to support the mission of the company by expanding and improving experiences that prepare the employees to thrive in a diverse environment. We are committed to promoting diversity by increasing awareness of and valuing the diﬀerences among the prospective and current members. As the region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. </p>
 <p style="color:white;">Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organizational acceleration and business goals. Human Resources department acts as a catalyst to enable all employees to contribute at optimum levels toward the success of the business. We aspire to build partnerships with management at all levels of the organization to create a campus culture that values all employees.</p>
@@ -242,20 +263,20 @@ SPECIAL DELEGATES PROMOTION
 <h2>Invited Speakers</h2>
 <div id="speakermover" class="speakermover">
 	<div id="copy3">
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Andre Vermeulen (Chief Executive Oﬃcer - Neuro-Link</p><p class="speakercountry">South Africa</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Ms. Alia Al Serkal (Sr. Director Talent Management & National Development Human Capital & Administration - DU</p><p class="speakercountry">United Arab Emirates</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Ms. Suzanne Lucas (Writer - Evil HR Lady</p><p class="speakercountry">Singapore</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Matthew G Osman (Change Director, Learning & Development Director - Anthem Inc.</p><p class="speakercountry">Virginia</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Rob Van Elburg (Executive HR Tech Advisor - Global Top 25 HR Speaker</p><p class="speakercountry">Netherlands</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Malek Osseiran (Head of Gulf - LinkedIn</p><p class="speakercountry">United Arab Emirates</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Elon Musk (Co-Founder & C.E.O - Tesla Motors</p><p class="speakercountry">United States of America</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Norm Smallwood (Leadership Development & Human Resource Expert - The RBL Group</p><p class="speakercountry">United States of America</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Ms. Tan Le (Innovative Technology Entrepreneur, C.E.O & Founder - Emotiv</p><p class="speakercountry">United States of America</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. AneelBhusri (C.E.O & Co-Founder - Workday</p><p class="speakercountry">United States of America</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Stephen Kelly (Chief Human Resources & Leadership Oﬃcer - Avanade</p><p class="speakercountry">United States of America</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Darryl Wee (Managing Director, Asia - The RBL Group</p><p class="speakercountry">Singapore</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Mr. Faleh Neda (Talent Acquisition Manager - PepsiCo</p><p class="speakercountry">Kingdom of Saudi Arabia</p></div>
-	<div class="speakerimage"><img alt="speakerimage" src=""><p>Ms. Fahdia Khalid Ismail (Human Resource Management, Programme Manager - Bahrain Polytechnic</p><p class="speakercountry">Kingdom of Bahrain</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/3av.jpeg"><p class="speakername">Mr. Andre Vermeulen</p><p class="speakerposition">(Chief Executive Oﬃcer</p><p class="speakerwork">Neuro-Link</p><p class="speakercountry">South Africa</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/7aas.jpg"><p class="speakername">Ms. Alia Al Serkal</p><p class="speakerposition">(Sr. Director Talent Management & National Development Human Capital & Administration</p><p class="speakerwork">DU</p><p class="speakercountry">United Arab Emirates</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/6sl.jpg"><p class="speakername">Ms. Suzanne Lucas</p><p class="speakerposition">(Writer</p><p class="speakerwork">Evil HR Lady</p><p class="speakercountry">Singapore</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/1mgo.jpeg"><p class="speakername">Mr. Matthew G Osman</p><p class="speakerposition">(Change Director, Learning & Development Director</p><p class="speakerwork">Anthem Inc.</p><p class="speakercountry">Virginia</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/4rve.jpg"><p class="speakername">Mr. Rob Van Elburg</p><p class="speakerposition">(Executive HR Tech Advisor</p><p class="speakerwork">Global Top 25 HR Speaker</p><p class="speakercountry">Netherlands</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/5mo.jpg"><p class="speakername">Mr. Malek Osseiran</p><p class="speakerposition">(Head of Gulf</p><p class="speakerwork">LinkedIn</p><p class="speakercountry">United Arab Emirates</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/2em.jpg"><p class="speakername">Mr. Elon Musk</p><p class="speakerposition">(Co-Founder & C.E.O</p><p class="speakerwork">Tesla Motors</p><p class="speakercountry">United States of America</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/8ns.jpg"><p class="speakername">Mr. Norm Smallwood</p><p class="speakerposition">(Leadership Development & Human Resource Expert</p><p class="speakerwork">The RBL Group</p><p class="speakercountry">United States of America</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/9tl.jpg"><p class="speakername">Ms. Tan Le</p><p class="speakerposition">(Innovative Technology Entrepreneur, C.E.O & Founder</p><p class="speakerwork">Emotiv</p><p class="speakercountry">United States of America</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/11ab.jpg"><p class="speakername">Mr. AneelBhusri</p><p class="speakerposition">(C.E.O & Co-Founder</p><p class="speakerwork">Workday</p><p class="speakercountry">United States of America</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/13sk.jpg"><p class="speakername">Mr. Stephen Kelly</p><p class="speakerposition">(Chief Human Resources & Leadership Oﬃcer</p><p class="speakerwork">Avanade</p><p class="speakercountry">United States of America</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/10dw.jpg"><p class="speakername">Mr. Darryl Wee</p><p class="speakerposition">(Managing Director, Asia</p><p class="speakerwork">The RBL Group</p><p class="speakercountry">Singapore</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/12fn.jpg"><p class="speakername">Mr. Faleh Neda</p><p class="speakerposition">(Talent Acquisition Manager</p><p class="speakerwork">PepsiCo</p><p class="speakercountry">Kingdom of Saudi Arabia</p></div>
+	<div class="speakerimage"><img alt="speakerimage" src="img/swiz2018/14fki.jpg"><p class="speakername">Ms. Fahdia Khalid Ismail</p><p class="speakerposition">(Human Resource Management, Programme Manager</p><p class="speakerwork">Bahrain Polytechnic</p><p class="speakercountry">Kingdom of Bahrain</p></div>
 	</div>
 
 
@@ -267,8 +288,8 @@ SPECIAL DELEGATES PROMOTION
 <h2>Strategic Partner<h2>
 <div id="flowleft" class="flowleft">
 	<div id="copy4">
-		<img style="" alt="Strategic Partner" src="">
-		<img style="" alt="Strategic Partner" src="">
+		<img style="" alt="Strategic Partner" src="img/alnajah.jpg">
+		<img style="" alt="Strategic Partner" src="img/alnajah.jpg">
 	</div>
 </div>
 </div>
@@ -279,8 +300,8 @@ SPECIAL DELEGATES PROMOTION
 
 <br>
 
-<div class="container">
-<div class="col-sm-9">
+<div class="container cardcontainer">
+<div class="col-sm-9 card">
 <h2 class="">TOPICS</h2>
 <ul>
 <li>HR in the Digital Transformation</li>
@@ -297,7 +318,7 @@ SPECIAL DELEGATES PROMOTION
 <li>Impact of Soft and Diﬃcult Human Resource Management Patterns</li>
 </ul>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-3 card">
 <h2>REASONS TO ATTEND</h2>
 <ul>
 <li>Networking</li>
