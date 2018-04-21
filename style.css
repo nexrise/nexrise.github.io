@@ -1,4 +1,4 @@
-body {margin:0;display:block;font-weight: 700;}
+body {margin:0;display:block;font-weight: 700;font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
 header {height :84px; overflow:hidden;}
 .contactheader{ float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
 .contactnumber{ color: #ee6e12; font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
