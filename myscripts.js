@@ -1,3 +1,19 @@
+spawnCall();
+
+// http://paislee.io/how-to-use-github-as-a-minimal-cms/
+$(document).ready(function() {
+    !function(config) {
+        $('.nexrise-tag').each(function() {
+            var tagName = $(this).data('nexrise-tag');
+            $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
+        });
+    }({
+        prefix: 'https://raw.githubusercontent.com/khobaib-nexrise/khobaib-nexrise.github.io/master/tags/'
+    });
+});
+//end
+
+setTimeout(function (){
 $(document).ready(function(){
 
 	$("#toggle").click(function(){
@@ -20,21 +36,4 @@ $(document).ready(function(){
 	
 
 });
-
-spawnCall();
-
-	
-
-// http://paislee.io/how-to-use-github-as-a-minimal-cms/
-$(document).ready(function() {
-    !function(config) {
-        $('.nexrise-tag').each(function() {
-            var tagName = $(this).data('nexrise-tag');
-            $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
-        });
-    }({
-        prefix: 'https://raw.githubusercontent.com/khobaib-nexrise/khobaib-nexrise.github.io/master/tags/'
-    });
-});
-//end
-
+}, 500); // How long do you want the delay to be (in milliseconds)?
