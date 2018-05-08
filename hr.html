@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="purecss.css">
  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
-<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="spawner.js"></script>
 
 
@@ -226,28 +226,6 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 
 
 <script>
-$(document).ready(function(){
-
-	$("#toggle").click(function(){
-		$("#togglee").toggleClass("a b");
-	});
-	
-	$("#toggle").click(function(){
-		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
-	});
-	
-	$("#menubars").click(function(){
-		
-		$("#menutoggle").toggleClass("hide show");
-	});
-	
-	$("#menubars").click(function(){
-		
-		$("#menubars").toggleClass("menu menuon");
-	});
-	
-
-});
 
 // Set the date we're counting down to
 var countDownDate = new Date("feb 22, 2018 00:00:00").getTime();
@@ -279,35 +257,20 @@ var x = setInterval(function() {
 }, 1000);
 
 
-
-//var slide = 1;
-//var timer = 3000;
-//setTimeout(function(){
-//
-//		if (slide == 1){
-//		document.getElementById("speakerstyle").style.marginLeft = "-100%";
-//		slide++;
-//		}
-		
-//		else {
-//		document.getElementById("speakerstyle").style.marginLeft = "0px";
-	//	slide = 1;
-//		}
-		
-//		console.log(slide);
-		
-		
-		
-//	setTimeout(arguments.callee, timer);
-// }, timer);
-
-
-
-spawnCall();
-
-document.getElementById("event").classList.add("active");
-
-
 	</script>
+	
+	
+
+
+<script src="myscripts.js"></script>
+
+<script>
+setTimeout(function (){
+document.getElementById("event").classList.add("active");
+}, 500); // How long do you want the delay to be (in milliseconds)?
+</script>
+
+
+
 </body>
 </html>

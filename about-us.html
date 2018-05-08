@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="purecss.css">
  <link rel="stylesheet" href="style.css">
  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
-<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="spawner.js"></script>
 
 <style>
@@ -100,35 +100,15 @@ Our people is our strongest assets. The team at NexRise is trained and motivated
   
 
 
+<script src="myscripts.js"></script>
+
 
 <script>
-$(document).ready(function(){
-
-	$("#toggle").click(function(){
-		$("#togglee").toggleClass("a b");
-	});
-	
-	$("#toggle").click(function(){
-		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
-	});
-	
-	$("#menubars").click(function(){
-		
-		$("#menutoggle").toggleClass("hide show");
-	});
-	
-	$("#menubars").click(function(){
-		
-		$("#menubars").toggleClass("menu menuon");
-	});
-	
-
-});
-
-spawnCall();
-
+setTimeout(function (){
 document.getElementById("about").classList.add("active");
+}, 500); // How long do you want the delay to be (in milliseconds)?
+</script>
 
-	</script>
+
 </body>
 </html>
