@@ -8,7 +8,6 @@
  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
 
-<script src="spawner.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <style>
 
@@ -55,8 +54,11 @@
 
 
 
-<header id="headercontent"></header>
-<div id="menutoggle" class="nav hide"></div>
+<header class="nexrise-tag" data-nexrise-tag="headercontent">
+</header>
+
+
+<div id="menutoggle" class="nav hide nexrise-tag" data-nexrise-tag='menutoggle'></div>
 
 
 <br>
@@ -67,7 +69,7 @@
 
 </div>
 
-<div class="col-sm-7 nexrise-tag" data-nexrise-tag="1">
+<div class="col-sm-7 nexrise-tag" data-nexrise-tag="ce1/1">
 </div>
 
 
@@ -131,8 +133,8 @@
 
 
 
-<div id="bottomcontent" class="container bottomcontent"></div>
-<div id="copyright" class="bottomfooter"></div>
+<div class="container bottomcontent nexrise-tag" data-nexrise-tag="footercontent"></div>
+
   
   
 
@@ -140,13 +142,11 @@
 <script src="myscripts.js"></script>
 
 <script>
-
-
-
 setTimeout(function (){
 document.getElementById("event").classList.add("active");
-}, 500); // How long do you want the delay to be (in milliseconds)?
+}, 1000); // How long do you want the delay to be (in milliseconds)?
 </script>
+
 
 </body>
 </html>

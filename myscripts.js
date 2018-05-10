@@ -1,5 +1,3 @@
-spawnCall();
-
 // http://paislee.io/how-to-use-github-as-a-minimal-cms/
 $(document).ready(function() {
     !function(config) {

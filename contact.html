@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="spawner.js"></script>
+
 
 
 <style>
@@ -75,9 +75,11 @@ input[type=submit]:hover {
 <body>
 
 
-<header id="headercontent"></header>
-<div id="menutoggle" class="nav hide"></div>
+<header class="nexrise-tag" data-nexrise-tag="headercontent">
+</header>
 
+
+<div id="menutoggle" class="nav hide nexrise-tag" data-nexrise-tag='menutoggle'></div>
 
 
 <!-- add stuff -->
@@ -160,9 +162,8 @@ Bahrain
 
 
 
-<div id="bottomcontent" class="container bottomcontent"></div>
-<div id="copyright" class="bottomfooter"></div>
-  
+<div class="container bottomcontent nexrise-tag" data-nexrise-tag="footercontent"></div>
+
 
 
 <script src="myscripts.js"></script>
