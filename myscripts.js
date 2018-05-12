@@ -34,4 +34,4 @@ $(document).ready(function(){
 	
 
 });
-}, 500); // How long do you want the delay to be (in milliseconds)?
+}, 1000); // How long do you want the delay to be (in milliseconds)?
