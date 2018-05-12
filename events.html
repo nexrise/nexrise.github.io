@@ -72,11 +72,10 @@ div.panel {
 <body>
 
 
-<header class="nexrise-tag" data-nexrise-tag="headercontent">
-</header>
 
+<header id="headercontent"></header>
 
-<div id="menutoggle" class="nav hide nexrise-tag" data-nexrise-tag='menutoggle'></div>
+<div id="menutoggle" class="nav hide"></div>
 
 
 
@@ -175,8 +174,7 @@ div.panel {
 
 
 
-<div class="container bottomcontent nexrise-tag" data-nexrise-tag="footercontent"></div>
-
+<div class="container bottomcontent" id="footercontent"></div>
   
 
 
@@ -203,13 +201,26 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-<script src="myscripts.js"></script>
+
+  
+
+  
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
+
+
+
 
 <script>
+
 setTimeout(function (){
 document.getElementById("event").classList.add("active");
-}, 500); // How long do you want the delay to be (in milliseconds)?
+}, 1000); // How long do you want the delay to be (in milliseconds)?
+
 </script>
+
+
+<script type="text/javascript" src="myscripts.js"></script>
 
 
 </body>

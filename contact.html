@@ -75,11 +75,10 @@ input[type=submit]:hover {
 <body>
 
 
-<header class="nexrise-tag" data-nexrise-tag="headercontent">
-</header>
 
+<header id="headercontent"></header>
 
-<div id="menutoggle" class="nav hide nexrise-tag" data-nexrise-tag='menutoggle'></div>
+<div id="menutoggle" class="nav hide"></div>
 
 
 <!-- add stuff -->
@@ -160,19 +159,25 @@ Bahrain
 
  
 
+<div class="container bottomcontent" id="footercontent"></div>
+
+  
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
 
 
-<div class="container bottomcontent nexrise-tag" data-nexrise-tag="footercontent"></div>
 
-
-
-<script src="myscripts.js"></script>
 
 <script>
+
 setTimeout(function (){
 document.getElementById("contact").classList.add("active");
-}, 500); // How long do you want the delay to be (in milliseconds)?
+}, 1000); // How long do you want the delay to be (in milliseconds)?
+
 </script>
+
+
+<script type="text/javascript" src="myscripts.js"></script>
 
 
 </body>

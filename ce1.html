@@ -8,7 +8,7 @@
  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <style>
 
 .container {border:0;}
@@ -61,12 +61,9 @@
 
 
 
-<header class="nexrise-tag" data-nexrise-tag="headercontent">
-</header>
+<header id="headercontent"></header>
 
-
-<div id="menutoggle" class="nav hide nexrise-tag" data-nexrise-tag='menutoggle'></div>
-
+<div id="menutoggle" class="nav hide"></div>
 
 <div class="floattop">
 <div class="space"></div>
@@ -192,20 +189,27 @@ www.pmi-switzerland.ch
 
 
 
-
-<div class="container bottomcontent nexrise-tag" data-nexrise-tag="footercontent"></div>
+<div class="container bottomcontent" id="footercontent"></div>
 
   
+
   
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
 
 
-<script src="myscripts.js"></script>
+
 
 <script>
+
 setTimeout(function (){
 document.getElementById("event").classList.add("active");
 }, 1000); // How long do you want the delay to be (in milliseconds)?
+
 </script>
+
+
+<script type="text/javascript" src="myscripts.js"></script>
 
 
 </body>

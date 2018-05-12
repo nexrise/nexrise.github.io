@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 //end
 
-setTimeout(function (){
+
 $(document).ready(function(){
 
 	$("#toggle").click(function(){
@@ -34,4 +34,3 @@ $(document).ready(function(){
 	
 
 });
-}, 1000); // How long do you want the delay to be (in milliseconds)?
