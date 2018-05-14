@@ -12,13 +12,7 @@
 <style>
 
 .container {border:0;}
-.block1>.heading {text-align:center;}
-.block1>.col-sm-7 {background-color:black;color:white;height:500px;font-weight:500;font-family: 'Source Sans Pro',sans-serif;}
-@media only screen and (max-width:768px){
-.block1>.col-sm-7 {height:auto;}
-}
-.block1>.col-sm-5 {height:500px;padding:0;}
-.block1>.col-sm-5>img {height:500px;}
+
 
 .block2>h2 {border:3px solid orange; max-width:550px; margin:auto; text-align:center;     margin-top: 20px;}
 .block2>.col-sm-3 {font-weight:500;font-family: 'Source Sans Pro',sans-serif;}
@@ -46,13 +40,20 @@
 
 .speakers {padding:20px;font-family: 'Source Sans Pro',sans-serif;}
 
-.floattop {background-image:url('imgswitzerland.jpg'); background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover; margin-top:0px; padding:20px;}
-.floattop>.space {height:550px;}
-.floattop>.title {background-color:black; width:calc(100% - 40px); color:white; padding:20px;}
-.floattop .center {margin:auto; color:blue; border:3px solid orange; max-width:500px; text-align:center; padding:15px;}
-.floattop .about {border-bottom:2px solid orange; max-width:220px;}
-.vision {width:calc(100% - 40px);}
-.floattop ul {padding:15px;}
+
+.block1 {background-image:url('imgswitzerland.jpg'); background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover; padding-bottom:20px;}
+.block1>.space {height:550px;}
+.contain1 {width:calc(100% - 40px); background-color:black; margin:auto; box-sizing:border-box; border:10px solid;}
+.heading {color:blue; border:3px solid orange; text-align:center; max-width:500px; margin:auto; margin-top:40px;}
+.contain1>.col-sm-7 {color:white;}
+.contain1>.col-sm-5 {}
+.contain1>.col-sm-5>img {max-height:500px; margin-right:50px;}
+
+.title {box-sizing:border-box; border:15px solid white;}
+.center {text-align:center; border:3px solid orange; max-width:500px; margin:auto;}
+.block1b>.col-sm-5>img {width:100%; min-height:350px;}
+.block1b {background-color:black; color:white;}
+
 
 </style>
 </head>
@@ -65,15 +66,17 @@
 
 <div id="menutoggle" class="nav hide"></div>
 
-<div class="floattop nexrise-tag" data-nexrise-tag="ce1/13"></div>
-
-
-<div class="container block1 nexrise-tag" data-nexrise-tag="ce1/1"></div>
+<div class="block1 nexrise-tag" data-nexrise-tag="ce1/1"></div>
 
 
 
 
-<div class="container block1 nexrise-tag" data-nexrise-tag="ce1/2"></div>
+<div class="container title nexrise-tag" data-nexrise-tag="ce1/13"></div>
+
+
+
+
+<div class="container block1b nexrise-tag" data-nexrise-tag="ce1/2"></div>
 
 
 
