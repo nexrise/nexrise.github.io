@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NexRise Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<style>
+
+.container {border:0;}
+
+
+.block2>h2 {border:3px solid orange; max-width:550px; margin:auto; text-align:center;     margin-top: 20px;}
+.block2>.col-sm-3 {font-weight:500;font-family: 'Source Sans Pro',sans-serif;}
+
+
+.block3>.col-sm-7 {background-color:black;color:white;height:500px;font-weight:500;font-family: 'Source Sans Pro',sans-serif;}
+@media only screen and (max-width:768px){
+.block3>.col-sm-7 {height:auto;}
+}
+.block3>.col-sm-5 {height:500px;padding:0;}
+.block3>.col-sm-5>img {height:500px;}
+
+.block4>h2 {border:3px solid orange; max-width:750px; margin:auto; text-align:center;    margin-top: 20px;}
+.block4>.col-sm-3 {font-weight:500; font-family: 'Source Sans Pro',sans-serif;}
+
+.block5 {font-weight:500; overflow:hidden;}
+.block5-1,.block5-2,.block5-3,.block5-4 {width:50%; float:left; min-height:450px; box-sizing: border-box; border:10px solid white; padding:25px;font-weight:500;font-family: 'Source Sans Pro',sans-serif;}
+.block5-1 {background-color:black;color:white;}
+.block5-2 {background-color:blue;color:white;}
+.block5-3 {background-color:orange;}
+.block5-4 {background-color:green;color:white;}
+@media only screen and (max-width:768px){
+.block5-1,.block5-2,.block5-3,.block5-4 {width:100%;}
+}
+
+.speakers {padding:20px;font-family: 'Source Sans Pro',sans-serif;}
+
+
+.block1 {background-image:url('imgswitzerland.jpg'); background-attachment: fixed; background-position: center;background-repeat: no-repeat; background-size: cover; padding-bottom:20px;}
+.block1>.space {height:550px;}
+.contain1 {width:calc(100% - 40px); background-color:black; margin:auto; box-sizing:border-box; border:10px solid;}
+.heading {color:blue; border:3px solid orange; text-align:center; max-width:500px; margin:auto; margin-top:40px;}
+.contain1>.col-sm-7 {color:white;}
+.contain1>.col-sm-5 {}
+.contain1>.col-sm-5>img {max-height:500px; margin-right:50px;}
+
+.title {box-sizing:border-box; border:15px solid white;}
+.center {text-align:center; border:3px solid orange; max-width:500px; margin:auto;}
+.block1b>.col-sm-5>img {width:100%; min-height:350px;}
+.block1b {background-color:black; color:white;}
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<header id="headercontent"></header>
+
+<div id="menutoggle" class="nav hide"></div>
+
+<div class="block1 nexrise-tag" data-nexrise-tag="ce1/1"></div>
+
+
+
+
+<div class="container title nexrise-tag" data-nexrise-tag="ce2"></div>
+
+
+
+
+<div class="container block1b nexrise-tag" data-nexrise-tag="ce1/2"></div>
+
+
+
+<div class="container block2 nexrise-tag" data-nexrise-tag="ce1/3"></div>
+
+
+
+<div class="container block3">
+<div class="col-sm-5"><img src="img/swiz2018/Swiss 5.jpg"></div>
+<div class="col-sm-7 nexrise-tag" data-nexrise-tag="ce1/4">
+
+</div>
+</div>
+
+
+<div class="container block4 nexrise-tag" data-nexrise-tag="ce1/5">
+
+</div>
+
+
+<div class="block5">
+
+	<div class="block5-1 nexrise-tag" data-nexrise-tag="ce1/8">
+
+	</div>
+	
+	
+	<div class="block5-2 nexrise-tag" data-nexrise-tag="ce1/6">
+
+	</div>
+	
+	
+	
+	<div class="block5-3 nexrise-tag" data-nexrise-tag="ce1/7">
+
+	</div>
+	
+	
+	<div class="block5-4 nexrise-tag" data-nexrise-tag="ce1/9">
+
+	</div>
+	
+	
+</div>
+
+
+
+<div class="container bottomcontent" id="footercontent"></div>
+
+  
+
+  
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
+
+
+
+
+<script>
+
+setTimeout(function (){
+document.getElementById("event").classList.add("active");
+}, 1000); // How long do you want the delay to be (in milliseconds)?
+
+</script>
+
+
+<script type="text/javascript" src="myscripts.js"></script>
+
+
+</body>
+</html>
