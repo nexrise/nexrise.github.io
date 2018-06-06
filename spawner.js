@@ -41,6 +41,7 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 "<a href='ce1.html'>Project Management and Leadership Expo<br>2018<br>Zurich, Switzerland</a>" +
+"<a href='ce2.html'>Technology Transformation Conference<br>2018<br>Sweden</a>" +
 "<a href='uae2018.html'>The Future Management, Leadership and Knowledge Summit<br> 2018<br>InterContinental Dubai - United Arab Emirates</a>" +
 "<a href='switzerland2018.html'>Global Human Resource & Leadership Summit <br> 2018<br>Switzerland</a>" +
 "<a href='bahrain2018.html'>Small Consortium Expo 2018 - Bahrain</a>" +
