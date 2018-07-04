@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NexRise Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<style>
+
+
+.banner1 {height:calc(100vh - 124px); width:100%; border:1px solid; box-sizing:border-box; overflow:hidden; position:relative; background-image:url('img/ce3/mypost.jpg'); background-position: center;background-repeat: no-repeat; background-size:100% 100%;}
+.banner1>img {display:block; max-width:100%; height:50%; position:absolute; top:90px;}
+@media only screen and (max-width:768px){
+.banner1 {height:calc(100vh - 84px);}
+.banner1>img {position:static;float:left;}
+}
+
+.label {height:50px; width:100%; background-color:pink; position:absolute; bottom:50px;}
+.label>p {font-size:30px; margin:5px 0px;}
+@media only screen and (max-width:768px){
+.label {position:static;float:left; margin-top:30px;}
+.label>p {font-size:25px;}
+}
+
+.place {color:white; position:absolute; right:10px; bottom:140px; font-size:20px;}
+@media only screen and (max-width:768px){
+.place {position:static; float:left;margin-top:30px;}
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<header id="headercontent"></header>
+
+<div id="menutoggle" class="nav hide"></div>
+
+
+
+<div class="banner1">
+<img src="img/ce3/NTTC2018IMG.png">
+
+<div class="label"><p>RE-STRUCTURING TECHNOLOGY</p></div>
+
+<p class="place">OCTOBER 25-26, 2018<br>
+THE OTERRA<br>
+BANGALORE | INDIA<br>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container bottomcontent" id="footercontent"></div>
+
+  
+
+  
+<script src="spawner.js"></script>
+<script>spawnCall();</script>
+
+
+
+
+<script>
+
+setTimeout(function (){
+document.getElementById("event").classList.add("active");
+}, 1000); // How long do you want the delay to be (in milliseconds)?
+
+</script>
+
+
+<script type="text/javascript" src="myscripts.js"></script>
+
+
+</body>
+</html>
