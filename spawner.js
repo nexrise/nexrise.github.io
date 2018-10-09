@@ -40,7 +40,10 @@ document.getElementById("menutoggle").innerHTML =
 "<div id='toggle' class='xs-visible' style='float:right;'><img id='arrowtoggle' class='arrowimg1' src='img/arrow.png'></div>" +
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
-"<a href='ce4.html'>Learning and Development Conclave<br>2018<br>Hilton Chennai | Chennai</a>" +
+
+"<a href='ce6.html'>TEACHING AND LEARNING CONCLAVE 2019<br>February 14-15, 2019 | Radisson Blu Hotel<br>Addis Ababa - Ethiopia</a>" +
+"<a href='ce5.html'>KINGDOM EDUCATIONAL SUMMIT 2019<br>January 23-24, 2019 | Gulf Hotel<br>Kingdom of Bahrain</a>" +	
+	"<a href='ce4.html'>Learning and Development Conclave<br>2018<br>Hilton Chennai | Chennai</a>" +
 "<a href='ce3.html'>Block Chain Tech<br>2018<br>Bangalore, India</a>" +
 "<a href='ce1.html'>Project Management and Leadership Expo<br>2018<br>Zurich, Switzerland</a>" +
 "<a href='ce2.html'>Technology Transformation Conference<br>2018<br>Sweden</a>" +
