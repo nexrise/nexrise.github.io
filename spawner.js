@@ -41,6 +41,7 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 
+"<a href='ce9.html'>AUGMENTED AND VIRTUAL REALITY 2019<br>APRIL 17 & 18, 2019 | THE RITZ CARLTON<br>DUBAI - UNITED ARAB EMIRATES</a>" +
 "<a href='ce8.html'>AUGMENTED AND VIRTUAL REALITY 2019<br>MARCH 07 & 08, 2019 | INTERCONTINENTAL HOTEL<br>KUALA LUMPUR - MALAYSIA</a>" +
 "<a href='ce7.html'>VAT: NATIONAL ASPECTS 2019<br>NOVEMBER 22, 2018 | GULF HOTEL<br>KINGDOM OF BAHRAIN</a>" +
 "<a href='ce6.html'>TEACHING AND LEARNING CONCLAVE 2019<br>February 14-15, 2019 | Radisson Blu Hotel<br>Addis Ababa - Ethiopia</a>" +
