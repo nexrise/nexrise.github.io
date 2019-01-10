@@ -41,11 +41,10 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 
+"<a href='ce10.html'>KINGDOM EDUCATIONAL SUMMIT 2019<br>January 04, 2019 | Gulf Hotel<br>Kingdom of Bahrain</a>" +
 "<a href='ce9.html'>AUGMENTED AND VIRTUAL REALITY 2019<br>APRIL 17 & 18, 2019 | THE RITZ CARLTON<br>DUBAI - UNITED ARAB EMIRATES</a>" +
 "<a href='ce8.html'>AUGMENTED AND VIRTUAL REALITY 2019<br>MARCH 07 & 08, 2019 | INTERCONTINENTAL HOTEL<br>KUALA LUMPUR - MALAYSIA</a>" +
-"<a href='ce7.html'>VAT: NATIONAL ASPECTS 2019<br>NOVEMBER 22, 2018 | GULF HOTEL<br>KINGDOM OF BAHRAIN</a>" +
-"<a href='ce6.html'>TEACHING AND LEARNING CONCLAVE 2019<br>February 14-15, 2019 | Radisson Blu Hotel<br>Addis Ababa - Ethiopia</a>" +
-"<a href='ce5.html'>KINGDOM EDUCATIONAL SUMMIT 2019<br>January 23-24, 2019 | Gulf Hotel<br>Kingdom of Bahrain</a>" +	
+"<a href='ce6.html'>TEACHING AND LEARNING CONCLAVE 2019<br>February 14-15, 2019 | Radisson Blu Hotel<br>Addis Ababa - Ethiopia</a>" +	
 "<a href='ce4.html'>Learning and Development Conclave<br>2019<br>Hilton Chennai | Chennai</a>" +
 "<a href='ce1.html'>Project Management and Leadership Expo<br>2019<br>Zurich, Switzerland</a>" +
 "<a href='events.html'>UPCOMING EVENTS</a>" +
