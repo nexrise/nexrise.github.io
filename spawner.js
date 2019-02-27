@@ -41,7 +41,7 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 
-"<a href='ce12.html'>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING CONFERENCE - DUBLIN 2019<br>April 26, 2019 | POWERSCOURT HOTEL<br>DUBLIN - IRELAND</a>" +
+"<a href='ce13.html'>NATIONAL CONFERENCE ON APPLIED SCIENCES AND TECHNOLOGY - BANGALORE 2019<br>MAY 24, 2019 | ITC GARDENIA<br>BANGALORE - INDIA</a>" +
 "<a href='ce10.html'>KINGDOM EDUCATIONAL SUMMIT 2019<br>April 04, 2019 | Gulf Hotel<br>Kingdom of Bahrain</a>" +
 "<a href='ce9.html'>AUGMENTED AND VIRTUAL REALITY 2019<br>APRIL 17 & 18, 2019 | THE RITZ CARLTON<br>DUBAI - UNITED ARAB EMIRATES</a>" +
 "<a href='ce6.html'>TEACHING AND LEARNING CONCLAVE 2019<br>February 14-15, 2019 | Radisson Blu Hotel<br>Addis Ababa - Ethiopia</a>" +	
