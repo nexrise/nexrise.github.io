@@ -41,6 +41,7 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 
+"<a href='ce15.html'>EDU-LEARN'19 - PUNE<br>AUGUST 02, 2019 | Radisson Blu Hotel<br>PUNE - INDIA</a>" +
 "<a href='ce14.html'>The Education Fair - Chennai 2019<br>JULY 18 & 19, 2019 | Hilton Chennai<br>Chennai - INDIA</a>" +
 "<a href='ce13.html'>NATIONAL CONFERENCE ON EDUCATIONAL TECHNOLOGY - BANGALORE 2019<br>MAY 24, 2019 | ITC GARDENIA<br>BANGALORE - INDIA</a>" +
 "<a href='ce10.html'>KINGDOM EDUCATIONAL SUMMIT 2019<br>April 04, 2019 | Gulf Hotel<br>Kingdom of Bahrain</a>" +
