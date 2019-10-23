@@ -1,4 +1,4 @@
-function spawnCall() {
+﻿function spawnCall() {
 	
 document.getElementById("headercontent").innerHTML = 
 "<img src='img/logoeng.png' height='80'>" +
@@ -9,7 +9,7 @@ document.getElementById("headercontent").innerHTML =
 
 "<span>Contact Us</span><br>" +
 
-"<span class='contactnumber'>+91-9739545678</span>" +
+"<span class='contactnumber'>+91-9945614517</span>" +
 
 "</div>" +
 
@@ -41,6 +41,7 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 
+"<a href='ce18.html'>#IFF - 2020<br>25 & 26AUGUST 2020 | Sofitel Phillipines Plaza Manila<br>Manila - Philippines</a>" +
 "<a href='ce17.html'>NEX-INVENTIVE GLOBAL<br>2019 & 2020</a>" +
 "<a href='ce16.html'>NEX-INVENTIVE #QATAR<br>AUGUST 28, 2019 | SHERATON GRAND DOHA<br>DOHA - QATAR</a>" +
 "<a href='ce15.html'>EDU-LEARN'19 - PUNE<br>AUGUST 02, 2019 | Radisson Blu Hotel<br>PUNE - INDIA</a>" +
