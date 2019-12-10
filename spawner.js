@@ -41,6 +41,7 @@ document.getElementById("menutoggle").innerHTML =
 "<a id='event' href='events.html'>Events</a>" +
 "<div id='togglee' class='a dropdown-content'>" +
 
+"<a href='ce19.html'>Nex Inventive #Tunisia - 2020<br>26 April 2020 | Tunis Grand Hotel<br>Tunis - Tunisia</a>" +
 "<a href='ce18.html'>#IFF - 2020<br>25 & 26 AUGUST 2020 | Sofitel Phillipines Plaza Manila<br>Manila - Philippines</a>" +
 "<a href='ce17.html'>NEX-INVENTIVE GLOBAL<br>2019 & 2020</a>" +
 "<a href='ce16.html'>NEX-INVENTIVE #QATAR<br>AUGUST 28, 2019 | SHERATON GRAND DOHA<br>DOHA - QATAR</a>" +
