@@ -1,0 +1,48 @@
+.carousel-item > img {
+  height: calc(100vh - 156px);
+}
+
+@media (max-width: 768px) {
+  .carousel-item > img {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item > img {
+    height: 45vh;
+  }
+}
+
+.articles img {
+  width: 100%;
+  height: 200px;
+}
+
+.about-article img {
+  width: 100%;
+}
+
+.about-article .col-md-6 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.about-article > .row:first-child {
+  background-color: #ee6e12;
+}
+
+.about-article > .row:last-child {
+  background-color: #626262;
+}
+
+.about-article > .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(255,255,255);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+

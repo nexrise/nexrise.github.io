@@ -1,297 +1,230 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>NexRise Events</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="purecss.css">
- <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>NexRise Events</title>
+	<link rel="icon" href="/static/img/fav-icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="/static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/static/css/Article-List.css">
+    <link rel="stylesheet" href="/static/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="/static/css/Footer-Dark.css">
+    <link rel="stylesheet" href="/static/css/Map-Clean.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+<script src="/static/js/jquery.min.js"></script>
+<script> 
+$(function(){
+$.ajaxSetup({ cache: false });
+$("#header").load("/header.html"); 
+$("#nav").load("/nav.html"); 
+$("#footer").load("/footer.html");
+});
+</script>
 
 <style>
 
-/* CONTENT */
-
-body {font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
-
-.firstblock {background-color:#ee6e12;border:0;margin-top:10px;color:white;}
-.center {height:439px; width:100%; background-position:center center;background-repeat:no-repeat;margin:auto;background-size: cover; }
-.secondblock {background-color:#626262;color:white;border:0;margin-top:10px;margin-bottom:10px;}
-
-
-/* stuff */
-.content {max-width:92%; margin:auto; min-height:;}
-.content>h1 {color:#52575b; font-weight: 500; font-size: 36px;}
-
-/* accordion */
-button.accordion {
-    background-color: #52575b;
-    color: #fff;
-    cursor: pointer;
-    padding: 14px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
-	margin-bottom:10px;
-	letter-spacing: .05em;
-}
-button.accordion.active, button.accordion:hover {
-    text-decoration: underline;
-}
-button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-button.accordion.active:after {
-    content: "\2212";
-}
-
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.btnhr {width:80px; margin-bottom:50px;}
-.btnhr>a {color:white; text-decoration:none;}
-
 </style>
+
+
 </head>
+
 
 <body>
 
-
-
-<header id="headercontent"></header>
-
-<div id="menutoggle" class="nav hide"></div>
+<header id="header"></header>
+<nav id="nav" class="navbar navbar-dark navbar-expand-md sticky-top bg-dark"></nav>
 
 
 
 
-<div class="content">
-<h1>EVENTS</h1>
+<div data-bs-parallax-bg="true" style="height: 400px;background-image: url(/static/img/1051-1800x900.jpg); background-position: center;background-size: cover;"></div>
 
-<button class="accordion">
-<a>Nex-Inventive #Tunisia - 2020</a>
-</button>
-<div class="panel">
-<p>26 APRIL, 2020 | TUNIS GRAND HOTEL</p>
-<p>TUNIS - TUNISIA</p>
-<div class="btnhr button"><a href="ce19.html" type="button">click here</a></div>
+<div class="container" style="margin-top:20px; margin-bottom:20px;">
+
+    <div role="tablist" id="accordion-1">
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">NEX-INVENTIVE GLOBAL</a></h5>
+            </div>
+            <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:56 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/nex-inv-global.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">NEX-INVENTIVE #TUNISIA</a></h5>
+            </div>
+            <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:55 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/nex-inventive-tunisia.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3">INTERNATIONAL FASHION FESTIVAL - 2020</a></h5>
+            </div>
+            <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:53 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/ind-fash-fest-20.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4">NEX-INVENTIVE QATAR</a></h5>
+            </div>
+            <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:52 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/nex-inven-qatar.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="#accordion-1 .item-5">EDU LEARN – PUNE 2019</a></h5>
+            </div>
+            <div class="collapse item-5" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:50 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/edu-learn-pune-19.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-6" href="#accordion-1 .item-6">The Education Fair - 2019</a></h5>
+            </div>
+            <div class="collapse item-6" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:49 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/edu-fair-19.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-7" href="#accordion-1 .item-7">National Conference on Educational Technology - Bangalore 2019</a></h5>
+            </div>
+            <div class="collapse item-7" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:47 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/nat-conf-edu-tech-blr19.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-8" href="#accordion-1 .item-8">KINGDOM EDUCATIONAL SUMMIT 2019</a></h5>
+            </div>
+            <div class="collapse item-8" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 1:38 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/kingd-edu-sum-19.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-9" href="#accordion-1 .item-9">TEACHING AND LEARNING CONCLAVE 2019</a></h5>
+            </div>
+            <div class="collapse item-9" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 19, 2019, 9:29 a.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/teach-learn-con-19.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-10" href="#accordion-1 .item-10">Global Education Conclave 2018</a></h5>
+            </div>
+            <div class="collapse item-10" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 18, 2019, 1:57 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/global-edu-con-2018.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="card">
+            <div class="card-header bg-dark" role="tab">
+                <h5 class="mb-0"><a class="text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-11" href="#accordion-1 .item-11">LEARNING AND DEVELOPMENT CONCLAVE 2018</a></h5>
+            </div>
+            <div class="collapse item-11" role="tabpanel" data-parent="#accordion-1">
+                <div class="card-body">
+                    <p class="card-text">Dec. 18, 2019, 1:56 p.m.</p>
+                    <p class="card-text"></p>
+					<button type="button" class="btn btn-primary"><a class="text-white" href="/events/learn-develop-con.html">Click Here</a></button>
+                </div>
+            </div>
+        </div>
+		
+
+    </div>
 </div>
 
 
-<button class="accordion">
-<a>#IFF - 2020</a>
-</button>
-<div class="panel">
-<p>25 & 26 MARCH, 2020 | SOFITEL PHILIPPINES PLAZA MANILA</p>
-<p>Manila - Philippines</p>
-<div class="btnhr button"><a href="ce18.html" type="button">click here</a></div>
+<!-- <script>
+$(document).ready(function(){
+$('a[aria-controls="accordion-1 .item-1"]').attr("aria-expanded","true");
+});
+</script> -->
+
+
+
+
+
+<div class="footer-dark">
+<footer id="footer"></footer>
 </div>
 
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/bs-init.js"></script>
 
-<button class="accordion">
-<a>NEX-INVENTIVE GLOBAL</a>
-</button>
-<div class="panel">
-<div class="btnhr button"><a href="ce17.html" type="button">click here</a></div>
-</div>
-
-
-<button class="accordion">
-<a>EDU-LEARN'19 - PUNE</a>
-</button>
-<div class="panel">
-<p>August 02, 2019 | Radisson Blu Hotel</p>
-<p>Pune - India</p>
-<div class="btnhr button"><a href="ce15.html" type="button">click here</a></div>
-</div>
-
-
-<button class="accordion">
-<a>The Education Fair - Chennai 2019</a>
-</button>
-<div class="panel">
-<p>July 18 & 19, 2019 | Hilton Chennai</p>
-<p>Chennai - India</p>
-<div class="btnhr button"><a href="ce14.html" type="button">click here</a></div>
-</div>
-
-
-<button class="accordion">
-<a>National Conference on Educational Technology - Bangalore 2019</a>
-</button>
-<div class="panel">
-<p>Postponed</p>
-<p>Bangalore - India</p>
-<div class="btnhr button"><a href="ce13.html" type="button">click here</a></div>
-</div>
-
-
-<button class="accordion">
-<a>KINGDOM EDUCATIONAL SUMMIT 2019</a>
-</button>
-<div class="panel">
-<p>April 04, 2019 | Gulf Hotel</p>
-<p>Kingdom of Bahrain</p>
-<div class="btnhr button"><a href="ce10.html" type="button">click here</a></div>
-</div>
-
-<button class="accordion">
-<a>Augmented and Virtual Reality - Dubai 2019</a>
-</button>
-<div class="panel">
-<p>April 17 & 18, 2019 | The Ritz Carlton</p>
-<p>Dubai - United Arab Emirates</p>
-<div class="btnhr button"><a href="ce8.html" type="button">click here</a></div>
-</div>
-
-<button class="accordion">
-<a>TEACHING AND LEARNING CONCLAVE 2019</a>
-</button>
-<div class="panel">
-<p>February 14-15, 2019 | Radisson Blu Hotel</p>
-<p>Addis Ababa - Ethiopia</p>
-<div class="btnhr button"><a href="ce6.html" type="button">click here</a></div>
-</div>
-
-
-<button class="accordion">
-<a>Learning and Development Conclave 2018</a>
-</button>
-<div class="panel">
-<p>The Important knowledge based Interaction Event</p>
-<p>Explore the future of workplace, leadership and knowledge</p>
-<p>Hilton Chennai | Chennai</p>
-<p>October 26, 2018</p>
-<div class="btnhr button"><a href="ce4.html" type="button">click here</a></div>
-</div>
-
-
-<button class="accordion">
-<a>Global Education Conclave 2019 (Switzerland)</a>
-</button>
-<div class="panel">
-<p>Switzerland</p>
-<p>date</p>
-<div class="btnhr button"><a href="eduswitzerland2018.html" type="button">click here</a></div>
-</div>
-
-<button class="accordion">
-<a>Upcoming Events:</a>
-</button>
-<div class="panel">
-
-	<button class="accordion">
-	<a>International HR Tech Conference - 2019 (Malaysia)</a>
-	</button>
-	<div class="panel">
-	<p>Kuala Lumpur - Malaysia</p>
-	<p>12th April 2018</p>
-	<div class="btnhr button"><a href="malaysia2018.html" type="button">click here</a></div>
-	</div>
-
-	<button class="accordion">
-	<a>National Human Resources Conference - 2019 (Bahrain)</a>
-	</button>
-	<div class="panel">
-	<p>Ramee Grand Hotel - Kingdom of Bahrain</p>
-	<p>22nd February 2018</p>
-	<div class="btnhr button"><a href="hr.html" type="button">click here</a></div>
-	</div>
-
-	<button class="accordion">
-	<a>Oman Human Resource Vision - 2019 (Oman)</a>
-	</button>
-	<div class="panel">
-	<p>Sultanate of Oman</p>
-	<p>15 February 2018</p>
-	<div class="btnhr button"><a href="oman.html" type="button">click here</a></div>
-	</div>
-	
-	<button class="accordion">
-	<a>National Human Resource Summit - 2019 (Abu Dhabi)</a>
-	</button>
-	<div class="panel">
-	<p>Abu Dhabi - United Arab Emirates</p>
-	<p>7th March 2018</p>
-	<div class="btnhr button"><a href="uae2018.html" type="button">click here</a></div>
-	</div>
-
-	<li>Training and Development Program - Kingdom of Bahrain 2019</li>
-	<li>Water and Power Summit – Saudi Arabia 2019</li>
-	<li>Health, Safety and Environment Summit – Kingdom of Bahrain 2020</li>
-	<li>Science, Health and Medical Conference – Sultanate of Oman 2020</li>
-	<li>Travel and Tourism Summit – Kingdom of Bahrain 2020</li>
-	<li>Teaching, Education and Learning Conference – Sultanate of Oman 2020</li>
-</div>
-
-
-</div>
-
-
-
-<div class="container bottomcontent" id="footercontent"></div>
-  
-
-
-
-<script>
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
-
-</script>
-	
-
-
-
-
-  
-
-  
-<script src="spawner.js"></script>
-<script>spawnCall();</script>
-
-
-
-
-<script>
-
-setTimeout(function (){
-document.getElementById("event").classList.add("active");
-}, 1000); // How long do you want the delay to be (in milliseconds)?
-
-</script>
-
-
-<script type="text/javascript" src="myscripts.js"></script>
+<script> 
+$(document).ready(function(){
+setTimeout(
+	function() 
+	{
+		$("#events").addClass("active");
+	}, 100);
+});
+</script> 
 
 
 </body>
+
 </html>
