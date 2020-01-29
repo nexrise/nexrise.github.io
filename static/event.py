@@ -3,10 +3,6 @@
 Event = [
 
 
-("Test",
-"test",
-"test"),
-
 ("NEX-INVENTIVE GLOBAL",
 "nex-inv-global",
 "Dec. 19, 2019, 1:56 p.m."),
