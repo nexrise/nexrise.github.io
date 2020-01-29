@@ -3,7 +3,9 @@
 Event = [
 
 
-
+("Test",
+"test",
+"test"),
 
 ("NEX-INVENTIVE GLOBAL",
 "nex-inv-global",
@@ -13,12 +15,12 @@ Event = [
 "nex-inventive-tunisia",
 "Dec. 19, 2019, 1:55 p.m."),
 
-("INTERNATIONAL FASHION FESTIVAL - 2020",
-"ind-fash-fest-20",
-"Dec. 19, 2019, 1:55 p.m."),
-
 ("NEX-INVENTIVE QATAR",
 "nex-inven-qatar",
+"Dec. 19, 2019, 1:55 p.m."),
+
+("INTERNATIONAL FASHION FESTIVAL - 2020",
+"ind-fash-fest-20",
 "Dec. 19, 2019, 1:55 p.m."),
 
 ("EDU LEARN - PUNE 2019",
