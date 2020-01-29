@@ -40,9 +40,12 @@ from os.path import isfile, join
 print("Writing header navbar and footer in all files")
 navs = [f for f in listdir("../") if isfile(join("../", f))]
 for x in navs:
-    f1 = Format("../" + x)
-    f1.myfunc()
-    print(x)
+    if x == "CNAME":
+        print(x)
+    else:
+        f1 = Format("../" + x)
+        f1.myfunc()
+        print(x)
 print("Done")
 
 events = [f for f in listdir("../events/") if isfile(join("../events/", f))]
