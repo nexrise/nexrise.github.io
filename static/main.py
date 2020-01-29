@@ -82,5 +82,5 @@ epage.close()
 
 print("Completed (1/2)...")
 
-import run
+import writeStatic
 

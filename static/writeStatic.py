@@ -33,7 +33,7 @@ class Format:
         index.close()
 
 
-from os import listdir
+from os import listdir, system
 from os.path import isfile, join
 
 
@@ -56,3 +56,6 @@ for x in events:
 print("Done")
 
 print("Completed (2/2)")
+
+
+system("pause")
